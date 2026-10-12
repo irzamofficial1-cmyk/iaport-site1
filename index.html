@@ -1,0 +1,1514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Irzam Shakeel &amp; Adnan Ahmed — Web Developers</title>
+    <meta name="description" content="Irzam Shakeel and Adnan Ahmed — web developers building modern, interactive digital experiences. Portfolio presented as an interactive 3D book." />
+    <meta name="theme-color" content="#0b0a09" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Irzam Shakeel &amp; Adnan Ahmed — Web Developers" />
+    <meta property="og:description" content="A web developer portfolio told as an interactive 3D book." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0a09'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23d9d4c7'%3EI%26amp;A%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts load without blocking first paint; system fonts show until they arrive -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..600&family=Manrope:wght@400..800&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300..700;1,300..600&family=Manrope:wght@400..800&display=swap" /></noscript>
+    <style>
+:root{--ink:#17130f;--ink-2:#3a342b;--muted:#7a7263;--paper:#f1ebde;--paper-2:#e7dfcd;--rule:rgba(23,19,15,0.18);--char:#0b0a09;--silver:#c4c7cd;--silver-d:#8c9098;--serif:'Fraunces','Iowan Old Style','Palatino Linotype',Georgia,serif;--sans:'Manrope','Inter',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;--noise:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .32 0 0 0 0 .26 0 0 0 0 .18 0 0 0 .11 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");--grain-dark:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");--wood:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='520'><filter id='w'><feTurbulence type='fractalNoise' baseFrequency='.004 .22' numOctaves='4' seed='7'/><feColorMatrix values='0 0 0 0 .8 0 0 0 0 .7 0 0 0 0 .55 0 0 0 .5 -.12'/></filter><rect width='100%' height='100%' filter='url(%23w)'/></svg>")}*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--char)}html,body{margin:0;background:var(--char)}body{overflow-x:hidden}[id]{scroll-margin-top:64px}body{font-family:var(--sans);color:#e9e5dc;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}a{color:inherit}:focus-visible{outline:2px solid #e8e3d6;outline-offset:3px;border-radius:4px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.stage{position:relative;height:100vh;height:100svh;overflow:hidden;background:#0a0908}.table{position:absolute;inset:0;pointer-events:none;background:radial-gradient(62% 52% at 50% 56%,rgba(255,238,208,0.2),rgba(255,232,200,0.07) 46%,transparent 74%),radial-gradient(120% 90% at 50% 120%,rgba(0,0,0,0.7),transparent 60%),var(--wood),linear-gradient(180deg,#17140f 0%,#0d0b09 55%,#070605 100%);background-blend-mode:normal,normal,soft-light,normal}.table::after{content:'';position:absolute;inset:0;background:radial-gradient(90% 80% at 50% 50%,transparent 55%,rgba(0,0,0,0.78) 100%)}.scene{position:absolute;inset:0;perspective:2000px;perspective-origin:50% 38%;user-select:none;-webkit-user-select:none;touch-action:pan-y;cursor:default}.scene.dragging{cursor:grabbing}.camera{position:absolute;left:50%;top:47%;width:0;height:0;transform-style:preserve-3d;will-change:transform}.mode-single .camera{top:45%}.book{position:absolute;left:0;width:0;transform-style:preserve-3d}.ui{position:absolute;z-index:20}.top{position:fixed;z-index:30;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:max(16px,env(safe-area-inset-top)) clamp(16px,3vw,36px) 0;pointer-events:none}.top>*{pointer-events:auto}.brand{font-family:var(--serif);font-weight:600;letter-spacing:0.34em;font-size:0.95rem;text-decoration:none;color:#ece7db;padding:6px 0}.ui-btn{display:inline-flex;align-items:center;gap:0.6em;color:#ddd8cb;border:1px solid rgba(255,255,255,0.16);background:rgba(18,17,15,0.82);border-radius:999px;padding:0.55em 1.1em;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;transition:background 0.25s,border-color 0.25s,transform 0.25s,opacity 0.25s}.ui-btn:hover:not(:disabled){background:rgba(40,38,34,0.75);border-color:rgba(255,255,255,0.34)}.ui-btn:active:not(:disabled){transform:scale(0.96)}.ui-btn:disabled{opacity:0.3;cursor:default}.ui-btn.round{width:46px;height:46px;padding:0;justify-content:center}.ui-btn.round svg{width:20px;height:20px}.ui-btn.wide{width:100%;justify-content:center;margin-top:1.2rem}.toc-btn i{width:14px;height:8px;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor;position:relative}.toc-btn i::after{content:'';position:absolute;left:0;right:0;top:50%;border-top:1.5px solid currentColor;transform:translateY(-50%)}.bar{left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:center;gap:14px}.counter{margin:0;min-width:11.5em;text-align:center;display:flex;flex-direction:column;gap:3px}.counter b{font-family:var(--serif);font-weight:500;font-size:1.02rem;letter-spacing:0.08em;color:#efeadd}.counter span{font-size:0.66rem;letter-spacing:0.22em;text-transform:uppercase;color:#8d887c;min-height:1em}.hint{left:50%;bottom:calc(max(18px,env(safe-area-inset-bottom)) + 62px);transform:translateX(-50%);margin:0;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:#a29c8e;white-space:nowrap;transition:opacity 0.8s;pointer-events:none;animation:hintIn 1.4s 0.6s both}.hint.gone{opacity:0 !important;animation:none}@keyframes hintIn{from{opacity:0}to{opacity:0.9}}.toc{position:fixed;inset:0;display:flex;justify-content:flex-end;background:rgba(6,6,5,0.78);z-index:40}.toc[hidden]{display:none}.toc-card{width:min(380px,100%);height:100%;background:#12110f;border-left:1px solid rgba(255,255,255,0.1);padding:4.5rem 1.8rem 2rem;overflow:auto;animation:slideIn 0.35s cubic-bezier(0.2,0.8,0.2,1)}@keyframes slideIn{from{transform:translateX(30px);opacity:0}to{transform:none;opacity:1}}.toc .kicker{color:#8d887c;font-size:0.7rem;letter-spacing:0.26em;text-transform:uppercase;margin:0 0 1.2rem}.toc ol{list-style:none;margin:0;padding:0}.toc-item{width:100%;display:flex;gap:1.1rem;align-items:baseline;text-align:left;padding:0.8rem 0.2rem;border-bottom:1px solid rgba(255,255,255,0.08);font-family:var(--serif);font-size:1.25rem;color:#d8d3c6;transition:color 0.2s,padding 0.25s}.toc-item .n{font-family:var(--sans);font-size:0.68rem;letter-spacing:0.16em;color:#7f7a6e;width:1.8em}.toc-item:hover,.toc-item.on{color:#fff;padding-left:0.6rem}.toc-item.on .n{color:var(--silver)}.flat-fallback{height:100vh;overflow:auto;padding:2rem 1rem 4rem;max-width:760px;margin:0 auto}.flat-fallback h1{font-family:var(--serif)}.flat-card{position:relative;container-type:inline-size;margin:1.2rem 0;min-height:40rem;border-radius:8px}.flat-card .face-body{font-size:15px}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none !important;transition:none !important}}.leaf,.base,.edge,.cast,.zone,.table-shadow{position:absolute}.leaf{left:0;top:0;transform-origin:0 50%;transform-style:preserve-3d}.plane{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}.pb{transform:rotateY(180deg)}.leaf.flexing>.plane{visibility:hidden}.strips{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}.strip{position:absolute;top:0;height:100%;transform-style:preserve-3d;transform-origin:0 50%}.sf,.sb{position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden}.sb{transform:rotateY(180deg)}.inner{position:absolute;left:0;top:0;width:var(--W);height:var(--H)}.shade{position:absolute;inset:0;background:#0a0704;opacity:0;will-change:opacity;pointer-events:none;z-index:6}.cast{pointer-events:none;opacity:0}.board .pf{transform:translateZ(1.5px)}.board .pb{transform:rotateY(180deg) translateZ(1.5px);background:#181716 var(--grain-dark)}.face-wrap{position:absolute}.base{background:#141312 var(--grain-dark);border-radius:0 3px 3px 0}.edge{background:linear-gradient(180deg,#232120,#111010);transform-origin:50% 0}.edge.paper{background:repeating-linear-gradient(180deg,#d9d1be 0 1px,#f7f2e7 1px 2.3px);box-shadow:inset 0 0 6px rgba(70,50,20,0.35)}.board .edge{transform-origin:50% 0}.table-shadow{background:#000;box-shadow:0 0 26px 16px rgba(0,0,0,0.88);border-radius:10px;pointer-events:none}.zone{cursor:pointer;transition:background 0.3s}.zone-r:hover{background:linear-gradient(270deg,rgba(255,252,240,0.16),transparent)}.zone-l:hover{background:linear-gradient(90deg,rgba(255,252,240,0.16),transparent)}.mode-single .zone:hover{background:none}.face{position:absolute;inset:0;overflow:hidden;container-type:size;color:var(--ink);background-color:var(--paper);background-image:var(--noise),linear-gradient(135deg,rgba(255,255,255,0.35),rgba(120,90,40,0.06))}.face.blank{background-image:var(--noise)}.gutter{position:absolute;top:0;bottom:0;width:11%;pointer-events:none;z-index:4}.face.R .gutter{left:0;background:linear-gradient(90deg,rgba(48,32,10,0.34),rgba(48,32,10,0.1) 38%,transparent)}.face.L .gutter{right:0;background:linear-gradient(270deg,rgba(48,32,10,0.34),rgba(48,32,10,0.1) 38%,transparent)}.face.R{box-shadow:inset -1px 0 0 rgba(0,0,0,0.06)}.face-body{position:absolute;inset:0;padding:8cqw 10cqw 12.5cqw;font-size:clamp(10.5px,2.85cqw,19px);line-height:1.5;display:flex;flex-direction:column;overflow:hidden}.mode-single .face-body{font-size:clamp(12.2px,3.55cqw,17px);padding:8.5cqw 9cqw 14cqw;overflow-y:auto;touch-action:pan-y;scrollbar-width:none}.mode-single .face-body::-webkit-scrollbar{display:none}.face.R .face-body{padding-left:12cqw}.face.L .face-body{padding-right:12cqw}.folio{position:absolute;left:10cqw;right:10cqw;bottom:5cqw;display:flex;justify-content:space-between;z-index:3;font-size:clamp(8px,1.9cqw,11px);letter-spacing:0.24em;text-transform:uppercase;color:var(--muted);font-weight:600}.face.R .folio{left:12cqw}.face.L .folio{right:12cqw}.face.L .folio{flex-direction:row-reverse}.mode-single .folio{font-size:clamp(8.5px,2.4cqw,11px)}.cover{position:absolute;inset:0;container-type:size;overflow:hidden;border-radius:2px 6px 6px 2px;cursor:pointer;color:#cfd2d8;background:var(--grain-dark),radial-gradient(130% 100% at 28% 14%,#333335,#19191a 52%,#0d0d0e);background-blend-mode:overlay,normal}.cover-art{position:absolute;inset:0}.cover-frame{position:absolute;inset:5.5cqh 7cqw 5.5cqh 11cqw;border:1px solid rgba(196,199,205,0.34);border-radius:2px;box-shadow:inset 0 0 0 4px rgba(0,0,0,0.0),0 0 0 1px rgba(0,0,0,0.5)}.cover-frame::after{content:'';position:absolute;inset:7px;border:1px solid rgba(196,199,205,0.14)}.cover-inner{position:absolute;inset:0;padding:12cqh 9cqw 10cqh 13cqw;display:flex;flex-direction:column;align-items:center;text-align:center}.cover-top{display:flex;justify-content:space-between;width:100%;margin:0;font-size:2.4cqw;letter-spacing:0.34em;text-transform:uppercase;color:#8e929a}.cover-name{margin:auto 0 0;font-family:var(--serif);font-weight:700;font-size:15.5cqw;letter-spacing:0.1em;line-height:1.02;padding-left:0.1em;background:linear-gradient(105deg,#7d8087 0%,#f2f3f6 28%,#a5a8af 48%,#eceef2 66%,#8d9097 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(255,255,255,0.12)) drop-shadow(0 -1px 0 rgba(0,0,0,0.9)) drop-shadow(0 6px 10px rgba(0,0,0,0.45))}.cover-name span,.cover-name i{display:block}.cover-name i{font-style:italic;font-weight:300;font-size:0.34em;letter-spacing:0;line-height:1.5;padding:0}.cover-by{margin:2.6cqh 0 0;font-size:2.5cqw;letter-spacing:0.3em;text-transform:uppercase;color:#8e929a;text-align:center}.cover-role{margin:3cqh 0 0;font-size:3.5cqw;letter-spacing:0.62em;padding-left:0.62em;font-weight:600;color:#b3b6bd;text-shadow:0 -1px 0 rgba(0,0,0,0.8),0 1px 0 rgba(255,255,255,0.08)}.cover-rule{width:18cqw;height:1px;margin:5cqh 0 3.5cqh;background:linear-gradient(90deg,transparent,#9b9ea6,transparent)}.cover-tag{margin:0;font-family:var(--serif);font-style:italic;font-weight:300;font-size:4.4cqw;color:#aeb1b8}.cover-open{margin:auto 0 0;font-size:2.5cqw;letter-spacing:0.3em;text-transform:uppercase;color:#8b8f97}.cover-open span{animation:pulse 3.2s ease-in-out infinite;display:inline-block}@keyframes pulse{0%,100%{opacity:0.45}50%{opacity:1}}.cover-hinge{position:absolute;left:6.5cqw;top:0;bottom:0;width:3px;background:linear-gradient(90deg,rgba(0,0,0,0.7),rgba(255,255,255,0.09) 60%,transparent);pointer-events:none}.cover::before{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,0.07) 0%,transparent 38%,rgba(0,0,0,0.22) 100%),linear-gradient(90deg,rgba(0,0,0,0.5),transparent 9%)}.pg{display:flex;flex-direction:column;flex:1;min-height:0;gap:1.05em}.pg-head{margin-bottom:0.2em}.kicker{margin:0;font-size:0.68em;letter-spacing:0.24em;text-transform:uppercase;font-weight:700;color:var(--muted)}.kicker.center{text-align:center}.title{margin:0.35em 0 0;font-family:var(--serif);font-weight:500;font-size:2.35em;line-height:1.04;letter-spacing:-0.02em}.display{margin:0.2em 0 0;font-family:var(--serif);font-weight:500;font-size:3.2em;line-height:0.98;letter-spacing:-0.03em}.display.big{font-size:3.5em}.lede{margin:0;font-family:var(--serif);font-weight:350;font-size:1.3em;line-height:1.34;color:#2a251e}.body{margin:0;color:var(--ink-2);line-height:1.62}.sub-h{margin:0 0 0.45em;font-size:0.72em;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:0.8em}.sub-h::after{content:'';flex:1;height:1px;background:var(--rule)}.fine{margin:0;font-size:0.78em;color:var(--muted);line-height:1.5}.fine.top{margin-top:-0.4em}.num{font-size:0.72em;letter-spacing:0.14em;font-weight:700;color:var(--muted);margin-right:0.8em}.sample{display:inline-block;vertical-align:middle;font-size:0.6em;letter-spacing:0.14em;text-transform:uppercase;font-weight:700;padding:0.18em 0.6em;border:1px dashed #9a7b3f;color:#7d6125;border-radius:99px;margin-left:0.5em;white-space:nowrap;background:rgba(201,164,83,0.12)}.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0.35em}.chips li{font-size:0.7em;font-weight:600;letter-spacing:0.04em;padding:0.3em 0.75em;border:1px solid var(--rule);border-radius:99px;color:var(--ink-2);background:rgba(255,255,255,0.35)}.btns{display:flex;flex-wrap:wrap;gap:0.6em;margin-top:auto;padding-top:0.4em}.btn,.more,.cta{display:inline-flex;align-items:center;gap:0.55em;font-size:0.78em;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:1px solid var(--ink);padding:0.75em 1.25em;border-radius:99px;color:var(--ink);transition:background 0.25s,color 0.25s,transform 0.25s;cursor:pointer}.btn.solid,.cta{background:var(--ink);color:var(--paper)}.btn:hover,.more:hover,.cta:hover{background:var(--ink);color:var(--paper);transform:translateY(-1px)}.btn.solid:hover,.cta:hover{background:#000}.more{border:0;padding:0.2em 0;border-bottom:1px solid var(--ink);border-radius:0;text-transform:uppercase;align-self:flex-start}.more:hover{background:none;color:var(--ink);transform:none}.ico-arrow,.ico-ext{width:1.25em;height:1.25em;flex:none;transition:transform 0.3s}.more:hover .ico-arrow,.cta:hover .ico-arrow{transform:translateX(4px)}.btn:hover .ico-ext{transform:translate(2px,-2px)}.orn{text-align:center;color:var(--muted);margin:0;font-size:0.9em}.pg-portrait{align-items:center;justify-content:space-between;padding-top:0.4em}.arch{position:relative;margin:0;width:70%;aspect-ratio:3 / 4;border-radius:50% 50% 3px 3px / 30% 30% 3px 3px;overflow:hidden;background:radial-gradient(90% 70% at 50% 25%,#3a3733,#151413 70%);box-shadow:0 0 0 0.45em var(--paper),0 0 0 calc(0.45em + 1px) #b4ab98,0 1.6em 2.6em -1.2em rgba(0,0,0,0.55);flex:none}.arch-in,.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.mono{position:absolute;inset:0;display:grid;place-items:center}.mono span{font-family:var(--serif);font-style:italic;font-weight:300;font-size:13em;line-height:1;background:linear-gradient(160deg,#f4f5f7,#868a92 70%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:0.06em}.ph-note{position:absolute;left:0;right:0;bottom:1.1em;text-align:center}.cap{display:flex;align-items:center;gap:0.9em;font-size:0.78em;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;color:var(--ink-2)}.cap-rule{width:2.6em;height:1px;background:var(--ink)}.pg-intro .display{margin-top:0.35em}.pillars{list-style:none;margin:auto 0 0.3em;padding:1em 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1em;border-top:1px solid var(--ink)}.pillars li{display:flex;flex-direction:column;gap:0.35em;font-size:0.82em;line-height:1.45;color:var(--ink-2)}.pillars b{font-family:var(--serif);font-weight:600;font-size:1.28em;color:var(--ink)}.pillars .num{margin:0}.turn-hint{margin:0;display:flex;justify-content:flex-end;align-items:center;gap:0.6em;font-size:0.66em;letter-spacing:0.24em;text-transform:uppercase;font-weight:700;color:var(--muted)}.is-current .turn-hint .ico-arrow{animation:nudge 1.8s ease-in-out infinite}@keyframes nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}.pg-about{gap:1.25em}.pg-about .title{margin-bottom:0.1em}.quote{position:relative;margin:0.3em 0;padding:1.4em 0 1em;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);font-family:var(--serif);font-style:italic;font-weight:350;font-size:1.65em;line-height:1.25;letter-spacing:-0.01em}.quote footer{margin-top:0.9em;font-family:var(--sans);font-style:normal;font-size:0.4em;letter-spacing:0.24em;text-transform:uppercase;font-weight:700;color:var(--muted)}.qm{position:absolute;left:-0.02em;top:-0.35em;font-size:2.4em;color:#b19a6a;line-height:1}.sign{margin:auto 0 0;font-family:var(--serif);font-style:italic;font-size:1.5em;color:var(--ink-2)}.pg-skills{gap:0.6em}.skill{display:grid;grid-template-columns:3.3em 1fr;gap:1.2em;padding:1.15em 0 0.5em;border-top:1px solid var(--ink)}.skill-t{margin:0 0 0.55em;font-family:var(--serif);font-weight:500;font-size:1.5em;line-height:1.1;letter-spacing:-0.01em}.skill-ico svg{width:100%;height:auto;overflow:visible;transition:transform 0.4s cubic-bezier(0.2,0.8,0.2,1)}.skill-ico .d{fill:none;stroke:var(--ink);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:220;stroke-dashoffset:0}.skill-ico .d.thin{stroke-width:1;opacity:0.5}.skill-ico .f{fill:var(--ink)}.is-current .skill-ico .d{animation:draw 1.6s 0.6s ease both}@keyframes draw{from{stroke-dashoffset:220}to{stroke-dashoffset:0}}.skill:hover .skill-ico svg{transform:rotate(-5deg) scale(1.08)}.skill-list{list-style:none;margin:0;padding:0}.skill-list li{display:flex;align-items:baseline;gap:0.9em;padding:0.42em 0.1em;border-bottom:1px solid var(--rule);font-size:0.98em;font-weight:600;transition:padding 0.3s cubic-bezier(0.2,0.8,0.2,1),background 0.3s;position:relative}.skill-list li .i{font-size:0.68em;letter-spacing:0.14em;color:var(--muted);width:2em;font-weight:700}.skill-list li::after{content:'';position:absolute;right:0.4em;top:50%;width:0.45em;height:0.45em;border-radius:50%;background:var(--ink);transform:translateY(-50%) scale(0);transition:transform 0.3s}.skill-list li:hover{padding-left:0.6em;background:rgba(23,19,15,0.05)}.skill-list li:hover::after{transform:translateY(-50%) scale(1)}.pg-skills-r{padding-top:0.2em}.pg-skills-r .fine{margin-top:auto}.chap-num{margin:auto 0 0;font-family:var(--serif);font-weight:300;font-size:8.5em;line-height:0.75;letter-spacing:-0.04em;color:transparent;-webkit-text-stroke:1px rgba(23,19,15,0.28)}.shot{position:relative;display:block;width:100%;aspect-ratio:16 / 10;border-radius:0.55em;overflow:hidden;background:var(--b,#222);box-shadow:0 0.9em 1.7em -0.9em rgba(0,0,0,0.6),0 0 0 1px rgba(0,0,0,0.25);flex:none}.shot img{width:100%;height:100%;object-fit:cover;display:block}.shot.mini{aspect-ratio:16 / 11;border-radius:0.4em}.mock .bar{height:1.5em;display:flex;align-items:center;gap:0.3em;padding:0 0.7em;background:rgba(255,255,255,0.07)}.mock .bar i{width:0.5em;height:0.5em;border-radius:50%;background:rgba(255,255,255,0.28)}.mock .bar span{margin-left:0.8em;font-size:0.6em;letter-spacing:0.08em;color:rgba(255,255,255,0.42)}.mock .m{position:absolute;inset:1.5em 0 0 0;padding:1em}.m .nav{position:absolute;left:1em;right:1em;top:0.8em;height:0.45em;background:linear-gradient(90deg,rgba(255,255,255,0.5) 0 14%,transparent 14% 56%,rgba(255,255,255,0.22) 56% 66%,transparent 66% 70%,rgba(255,255,255,0.22) 70% 80%,transparent 80% 84%,rgba(255,255,255,0.22) 84% 100%);border-radius:9px;opacity:0.7}.m-biz .hero{position:absolute;left:1em;top:2.4em;width:56%;height:36%;border-radius:0.3em;background:linear-gradient(120deg,var(--a),rgba(255,255,255,0.15))}.m-biz .sub{position:absolute;left:1em;top:55%;width:40%;height:0.38em;border-radius:9px;background:rgba(255,255,255,0.35)}.m-biz .sub.s2{top:calc(55% + 0.9em);width:28%;opacity:0.6}.m-biz .cards{position:absolute;left:1em;right:1em;bottom:1em;height:22%;display:grid;grid-template-columns:repeat(3,1fr);gap:0.6em}.m-biz .cards i{border-radius:0.3em;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.12)}.m-biz::after{content:'';position:absolute;right:1em;top:2.4em;width:32%;height:36%;border-radius:0.3em;background:repeating-linear-gradient(135deg,rgba(255,255,255,0.12) 0 2px,transparent 2px 7px)}.m-shop .grid{position:absolute;left:1em;right:1em;top:2.2em;bottom:0.9em;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:0.6em}.m-shop .grid span{display:flex;flex-direction:column;gap:0.3em}.m-shop .grid em{flex:1;border-radius:0.3em;background:linear-gradient(150deg,var(--a),rgba(255,255,255,0.12));opacity:0.85}.m-shop .grid span:nth-child(2n) em{opacity:0.55}.m-shop .grid u{height:0.32em;width:60%;border-radius:9px;background:rgba(255,255,255,0.35)}.m-3d{background:radial-gradient(70% 90% at 50% 55%,rgba(255,255,255,0.1),transparent)}.m-3d .orb{position:absolute;left:50%;top:52%;width:46%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff8ec,var(--a) 40%,#1b1410 78%);box-shadow:0 0 2.5em -0.3em var(--a)}.m-3d .orb s{position:absolute;inset:-18%;border-radius:50%;border:1px solid rgba(255,255,255,0.28);transform:rotateX(70deg)}.m-3d .orb s:nth-child(2){inset:-34%;transform:rotateX(70deg) rotateZ(40deg);opacity:0.6}.m-3d .orb s:nth-child(3){inset:-52%;transform:rotateX(70deg) rotateZ(80deg);opacity:0.35}.m-3d .sub{position:absolute;left:50%;bottom:0.8em;width:24%;height:0.38em;transform:translateX(-50%);border-radius:9px;background:rgba(255,255,255,0.35)}.shot-btn{display:block;width:100%;border-radius:0.55em;transition:transform 0.4s cubic-bezier(0.2,0.8,0.2,1)}.shot-btn:hover{transform:translateY(-3px) scale(1.01)}.proj{display:flex;flex-direction:column;gap:0.9em}.proj-meta{display:flex;flex-direction:column;gap:0.6em}.proj-cat{margin:0;font-size:0.7em;letter-spacing:0.16em;text-transform:uppercase;font-weight:700;color:var(--muted)}.proj-title{margin:0;font-family:var(--serif);font-weight:500;font-size:1.9em;line-height:1.05;letter-spacing:-0.02em}.role{margin:0;font-size:0.82em;color:var(--ink-2)}.role b{font-size:0.8em;letter-spacing:0.18em;text-transform:uppercase;margin-right:0.7em;color:var(--muted)}.pg-projects .proj.big{flex:1}.proj.big .shot{aspect-ratio:16 / 9.4}.proj.small{flex:1;min-height:0;flex-direction:row;align-items:center;gap:1.1em}.proj.small .shot-btn{width:44%;flex:none}.proj.small .proj-meta{flex:1;min-width:0}.pg-projects-r{gap:1.1em;padding-top:0.2em}.pg-projects-r .proj.small + .proj.small{border-top:1px solid var(--rule);padding-top:1.1em}.pg-projects-r .proj-title{font-size:1.4em}.pg-projects-r .shot{aspect-ratio:4 / 3.6}.pg-projects-r .proj-meta{gap:0.4em}.pg-case{gap:0.8em}.pg-case .title{margin:0.1em 0 0;font-size:2.1em}.pg-case .proj-cat{margin-bottom:0.2em}.pg-case section .body{font-size:0.92em;line-height:1.55}.pg-case-r{padding-top:0.2em}.two{display:grid;grid-template-columns:1fr 1fr;gap:1.2em}.two .body{font-size:0.86em}.feat{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0.35em 1.2em}.feat li{position:relative;padding-left:1.15em;font-size:0.86em;color:var(--ink-2);line-height:1.4}.feat li::before{content:'';position:absolute;left:0;top:0.5em;width:0.5em;height:0.5em;border:1px solid var(--ink);transform:rotate(45deg)}.thumbs{display:grid;grid-template-columns:1fr 1fr;gap:0.8em}.thumbs img{width:100%;aspect-ratio:16 / 11;object-fit:cover;border-radius:0.4em}.stages{list-style:none;margin:0.3em 0 0;padding:0;position:relative;display:flex;flex-direction:column;gap:1.15em;counter-reset:s}.stages::before{content:'';position:absolute;left:1.2em;top:1.2em;bottom:1.2em;width:1px;background:var(--ink);transform-origin:top;opacity:0.55}.is-current .stages::before{animation:grow 1.6s 0.6s cubic-bezier(0.3,0.7,0.2,1) both}@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}.step{display:grid;grid-template-columns:2.4em 1fr;gap:1.1em;align-items:start;position:relative}.dot{width:2.4em;height:2.4em;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1px solid var(--ink);position:relative;z-index:1;font-family:var(--serif);font-size:1em;transition:background 0.3s,color 0.3s}.dot b{font-weight:600}.is-current .step .dot{animation:pop 0.6s calc(0.5s + var(--i) * 0.18s) cubic-bezier(0.3,1.5,0.5,1) both}@keyframes pop{from{transform:scale(0.4);opacity:0}to{transform:scale(1);opacity:1}}.step:hover .dot{background:var(--ink);color:var(--paper)}.step-t{margin:0.1em 0 0.25em;font-family:var(--serif);font-weight:500;font-size:1.32em;line-height:1.15}.step .body{font-size:0.88em;line-height:1.5}.stages.cont{margin-top:0.4em}.loop{width:70%;align-self:center;margin-top:auto}.loop .d{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:520;opacity:0.6}.is-current .loop .d{animation:drawL 2.6s 0.9s ease both}@keyframes drawL{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}.pg-process-r .fine{text-align:center;font-style:italic;font-family:var(--serif);font-size:0.95em}.pg-exp{gap:0.9em}.tl{position:relative}.tl-item{position:relative;padding-left:1.5em;margin-bottom:0.5em}.tl-item::before{content:'';position:absolute;left:0.28em;top:0.35em;bottom:-0.7em;width:1px;background:var(--rule)}.tl-dot{position:absolute;left:0;top:0.35em;width:0.58em;height:0.58em;border-radius:50%;border:1px solid var(--ink);background:var(--paper)}.tl-when{margin:0;font-size:0.68em;letter-spacing:0.18em;text-transform:uppercase;font-weight:700;color:var(--muted)}.tl-title{margin:0.15em 0 0;font-family:var(--serif);font-size:1.22em;font-weight:500;line-height:1.2}.tl-where{margin:0.1em 0 0;font-size:0.86em;color:var(--ink-2)}.pg-exp-r{padding-top:0.2em}.pg-contact{justify-content:center;gap:1.3em}.pg-contact .cta{align-self:flex-start;margin-top:0.7em;font-size:0.85em}.pg-contact-r{justify-content:flex-start;padding-top:1.2em}.contacts{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}.contacts li{border-bottom:1px solid var(--rule)}.contacts a{display:grid;grid-template-columns:5.6em 1fr 1.2em;align-items:center;gap:0.8em;text-decoration:none;padding:1em 0.1em;transition:padding 0.3s,background 0.3s}.contacts a:hover{padding-left:0.7em;background:rgba(23,19,15,0.05)}.ck{font-size:0.66em;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--muted)}.cv{font-family:var(--serif);font-size:1.12em;overflow-wrap:anywhere;line-height:1.2}.pg-contact-r .back{align-self:flex-start;margin-top:1.4em}.pg-contact-r .fine{margin-top:auto}.duo{display:flex;gap:1.4em;width:100%;justify-content:center;align-items:flex-start}.who{margin:0;width:46%;display:flex;flex-direction:column;align-items:center;gap:0.9em}.who .arch{width:100%}.who .mono span{font-size:7.5em}.who figcaption{display:flex;flex-direction:column;align-items:center;gap:0.2em;text-align:center}.who figcaption b{font-family:var(--serif);font-weight:500;font-size:1.25em}.who figcaption span{font-size:0.68em;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--muted)}.pg-portrait .cap{text-align:center;justify-content:center;font-size:0.66em}.person{display:flex;flex-direction:column;gap:0.7em}.pname{margin:0;font-family:var(--serif);font-weight:500;font-size:1.9em;line-height:1.1}.prole{margin:-0.4em 0 0;font-size:0.68em;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;color:var(--muted)}.fine.top:empty{display:none}.site{position:relative;background:#0a0908;color:#b9b3a5;font-size:1.02rem;line-height:1.7}.site::before{content:'';position:absolute;inset:0;background:var(--grain-dark);opacity:0.35;pointer-events:none}.wrap{position:relative;max-width:1120px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}.wrap.narrow{max-width:820px}.wrap.center{text-align:center}.sec{position:relative;padding:clamp(72px,11vw,150px) 0;border-top:1px solid rgba(255,255,255,0.06)}.sec.alt{background:linear-gradient(180deg,#0e0d0b,#0b0a09)}.eyebrow{margin:0 0 1rem;font-size:0.72rem;letter-spacing:0.28em;text-transform:uppercase;font-weight:700;color:var(--silver-d)}.h2{margin:0 0 1.2rem;font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.08;color:#efe9db;letter-spacing:-0.01em;text-wrap:balance}.h2.big{font-size:clamp(2.4rem,6.4vw,5rem)}.lead{max-width:46em;margin:0 0 clamp(36px,5vw,64px);font-size:clamp(1.02rem,1.5vw,1.2rem);color:#c9c3b5}.center .lead{margin-left:auto;margin-right:auto}.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0.5rem}.tags li{font-size:0.78rem;font-weight:600;letter-spacing:0.04em;padding:0.35em 0.9em;border:1px solid rgba(255,255,255,0.14);border-radius:99px;color:#d6d0c2;transition:background 0.25s,border-color 0.25s,transform 0.25s}.tags li:hover{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.3);transform:translateY(-1px)}.grid{display:grid;gap:clamp(14px,2vw,24px)}.card,.person-card{background:rgba(255,255,255,0.035);border:1px solid rgba(255,255,255,0.09);border-radius:16px;padding:clamp(22px,3vw,34px);transition:border-color 0.3s,background 0.3s,transform 0.3s}.card:hover,.person-card:hover{border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.05)}.people{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,24px)}.person-card{display:flex;gap:clamp(16px,2.4vw,28px);align-items:flex-start}.av{flex:0 0 clamp(84px,10vw,120px);aspect-ratio:3 / 4;border-radius:50% 50% 6px 6px / 32% 32% 6px 6px;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#2b2a28,#0f0e0d);border:1px solid rgba(255,255,255,0.14);display:grid;place-items:center}.av img{width:100%;height:100%;object-fit:cover}.av-mono{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(3rem,6vw,4.6rem);line-height:1;background:linear-gradient(160deg,#f4f5f8,#8d9097);-webkit-background-clip:text;background-clip:text;color:transparent}.pc-name{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,2.4vw,2rem);color:#f1ecdf;line-height:1.1}.pc-role{margin:0.3rem 0 0.9rem;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;color:var(--silver-d)}.pc-body p{margin:0 0 0.8rem}.pc-body .tags{margin:1rem 0 1.1rem}.link-line{display:inline-flex;align-items:center;gap:0.5rem;color:#efe9db;text-decoration:none;font-weight:600;font-size:0.9rem;border-bottom:1px solid rgba(255,255,255,0.3);padding-bottom:2px;transition:border-color 0.25s,gap 0.25s}.link-line:hover{border-color:#fff;gap:0.8rem}.ico{width:1.05em;height:1.05em;flex:none}.pull{margin:clamp(48px,7vw,96px) auto;max-width:780px;text-align:center}.pull p{margin:0;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.5rem,3.4vw,2.5rem);line-height:1.25;color:#efe9db;text-wrap:balance}.pull footer{margin-top:1.2rem;font-size:0.7rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--silver-d);font-weight:700}.pillars-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,40px);border-top:1px solid rgba(255,255,255,0.1);padding-top:2rem}.pillars-row li{display:flex;flex-direction:column;gap:0.35rem}.pillars-row .num{font-size:0.7rem;letter-spacing:0.2em;color:var(--silver-d);font-weight:700}.pillars-row b{font-family:var(--serif);font-weight:500;font-size:1.35rem;color:#efe9db}.grid.skills{grid-template-columns:repeat(4,1fr)}.card-ico{width:44px;height:44px;margin-bottom:1.2rem;color:var(--silver)}.card-ico svg{width:100%;height:100%}.card-ico .d{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.card-ico .f{fill:currentColor}.card-ico .thin{stroke-width:1;opacity:0.6}.card h3{margin:0 0 1rem;font-family:var(--serif);font-weight:500;font-size:1.35rem;color:#efe9db}.grid.services{grid-template-columns:repeat(2,1fr)}.card-h{padding-bottom:0.9rem;border-bottom:1px solid rgba(255,255,255,0.1)}.svc{list-style:none;margin:0;padding:0;display:grid;gap:1.1rem}.svc li{display:flex;gap:1rem}.svc .n{font-size:0.7rem;letter-spacing:0.16em;font-weight:700;color:var(--silver-d);padding-top:0.35rem;min-width:1.8em}.svc b{display:block;color:#efe9db;font-weight:600;font-size:1.02rem}.svc span:not(.n){color:#aaa497;font-size:0.92rem}.steps{list-style:none;margin:clamp(28px,4vw,48px) 0 0;padding:0;position:relative}.steps::before{content:'';position:absolute;left:21px;top:8px;bottom:8px;width:1px;background:linear-gradient(180deg,rgba(255,255,255,0.28),rgba(255,255,255,0.05))}.steps li{position:relative;display:flex;gap:1.4rem;padding:0 0 clamp(26px,3.4vw,42px)}.step-n{flex:none;width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#0a0908;border:1px solid rgba(255,255,255,0.28);color:#efe9db;font-family:var(--serif);font-size:1.05rem;position:relative;z-index:1}.steps h3{margin:0.45rem 0 0.25rem;font-family:var(--serif);font-weight:500;font-size:1.4rem;color:#efe9db}.steps p{margin:0;color:#aaa497}.faq{margin-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}.faq details{border-bottom:1px solid rgba(255,255,255,0.1)}.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0;font-family:var(--serif);font-size:clamp(1.15rem,2vw,1.45rem);color:#efe9db}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:'+';font-family:var(--sans);font-weight:300;font-size:1.6rem;line-height:1;color:var(--silver-d);transition:transform 0.3s}.faq details[open] summary::after{transform:rotate(45deg)}.faq details p{margin:0 0 1.3rem;max-width:40em;color:#b9b3a5}.sec.contact{background:radial-gradient(70% 90% at 50% 100%,rgba(255,232,200,0.07),transparent 70%),#0a0908}.mails{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:0 0 2.2rem;text-align:left}.mail-card{position:relative;display:flex;flex-direction:column;gap:0.25rem;padding:1.2rem 3rem 1.2rem 1.4rem;border:1px solid rgba(255,255,255,0.14);border-radius:14px;text-decoration:none;background:rgba(255,255,255,0.03);transition:border-color 0.3s,background 0.3s,transform 0.3s}.mail-card:hover{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.07);transform:translateY(-2px)}.mail-card .ico{position:absolute;right:1.1rem;top:1.2rem;color:var(--silver-d)}.mc-n{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:700;color:var(--silver-d)}.mc-e{color:#efe9db;font-size:1.02rem;overflow-wrap:anywhere}.btn-solid{display:inline-flex;align-items:center;gap:0.7rem;padding:0.95em 1.7em;border-radius:99px;background:#ece7db;color:#14110d;text-decoration:none;font-weight:700;font-size:0.82rem;letter-spacing:0.14em;text-transform:uppercase;transition:transform 0.25s,background 0.25s,gap 0.25s}.btn-solid:hover{background:#fff;gap:1rem;transform:translateY(-2px)}.socials{list-style:none;margin:2rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0.6rem 1.6rem;justify-content:center}.socials a{color:#c9c3b5;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.25)}.foot{position:relative;background:#070605;border-top:1px solid rgba(255,255,255,0.06);padding:1.6rem 0 calc(1.6rem + env(safe-area-inset-bottom));font-size:0.85rem;color:#8d887c}.foot-in{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}.foot p{margin:0}.foot a{color:#d6d0c2;text-decoration:none}.foot a:hover{color:#fff}.rv{opacity:0;transform:translateY(26px);transition:opacity 0.8s cubic-bezier(0.2,0.7,0.2,1) var(--d,0ms),transform 0.8s cubic-bezier(0.2,0.7,0.2,1) var(--d,0ms)}.rv.in{opacity:1;transform:none}.top.scrolled{background:linear-gradient(180deg,rgba(10,9,8,0.98),rgba(10,9,8,0.96));padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.06)}.top-nav{display:flex;gap:clamp(14px,2.4vw,30px);align-items:center}.top-nav a{color:#cfc9bb;text-decoration:none;font-size:0.74rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:600;transition:color 0.2s;padding:6px 0}.top-nav a:hover{color:#fff}.top-right{display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)}.more-cue{right:clamp(16px,3vw,36px);bottom:max(26px,env(safe-area-inset-bottom));display:inline-flex;align-items:center;gap:0.6rem;text-decoration:none;color:#c9c3b5;font-size:0.7rem;letter-spacing:0.22em;text-transform:uppercase;font-weight:700;padding:0.6rem 0}.more-cue svg{width:16px;height:16px;animation:bob 1.8s ease-in-out infinite}.more-cue:hover{color:#fff}@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}.toc-links{margin-top:1.6rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,0.1)}.toc-links .kicker{margin-bottom:0.6rem}.toc-links a{display:block;padding:0.55rem 0.2rem;color:#cfc9bb;text-decoration:none;font-family:var(--serif);font-size:1.1rem;border-bottom:1px solid rgba(255,255,255,0.06)}.toc-links a:hover{color:#fff}@media (max-width:1000px){.grid.skills{grid-template-columns:repeat(2,1fr)}.people{grid-template-columns:1fr}}@media (max-width:880px){.top-nav{display:none}.more-cue{bottom:calc(max(18px,env(safe-area-inset-bottom)) + 66px);right:50%;transform:translateX(50%)}.hint{display:none}}@media (max-width:680px){.grid.services,.mails,.pillars-row{grid-template-columns:1fr}.grid.skills{grid-template-columns:1fr}.person-card{flex-direction:column}.av{flex-basis:auto;width:96px}.site{font-size:1rem}}@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.more-cue svg{animation:none}}
+</style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript><p style="color:#ddd;padding:2rem;font-family:Georgia,serif">Irzam Shakeel &amp; Adnan Ahmed — Web Developers. This portfolio is an interactive book and needs JavaScript. Contact: irzamofficial1@gmail.com · hellobg4321@gmail.com</p></noscript>
+    <script>
+(()=>{
+"use strict";
+/* ---- content/site.js ---- */
+/**
+ * ============================================================
+ *  IRZAM SHAKEEL & ADNAN AHMED — SITE CONTENT
+ *  This is the only file you need to edit to update the book.
+ *  Everything below is typed, so your editor will tell you if
+ *  something is missing.
+ * ============================================================
+ */
+const site = {
+    /* ---------- Brand ---------- */
+    brand: 'IRZAM & ADNAN',
+    role: 'Web Developers',
+    tagline: 'Building Digital Experiences.',
+    openHint: 'Open the book to explore.',
+    year: '2026',
+    /* ---------- The two developers ---------- */
+    people: [
+        {
+            name: 'Irzam Shakeel',
+            first: 'Irzam',
+            role: 'Web Developer',
+            monogram: 'I',
+            /** e.g. '/images/irzam.jpg' (file in /public/images). Leave '' for the monogram. */
+            image: '',
+            email: 'irzamofficial1@gmail.com',
+            background: 'Irzam builds websites that feel considered from the first pixel to the last: clean structure, careful spacing, smooth motion and fast load times.',
+            approach: 'Every project starts with the audience. Then small, testable steps: prototype early, refine with real feedback, and keep the code tidy enough to maintain.',
+            focus: ['Interactive interfaces', 'Motion & 3D', 'Performance'],
+        },
+        {
+            name: 'Adnan Ahmed',
+            first: 'Adnan',
+            role: 'Web Developer',
+            monogram: 'A',
+            image: '',
+            email: 'hellobg4321@gmail.com',
+            background: 'Adnan builds dependable websites and web applications: responsive front ends backed by well-structured APIs, with attention to how everything behaves in real use.',
+            approach: 'Simple solutions that hold up: clear structure, readable code, testing across devices and honest communication from kickoff to launch.',
+            focus: ['Clean architecture', 'APIs & data', 'Reliability'],
+        },
+    ],
+    /* ---------- Page 1 · Portraits ---------- */
+    portrait: {
+        caption: 'Irzam Shakeel & Adnan Ahmed — Web Developers',
+    },
+    /* ---------- Page 2 · Introduction ---------- */
+    intro: {
+        kicker: 'Chapter 01 · Introduction',
+        heading: 'Hi, we’re Irzam & Adnan.',
+        lede: 'We’re two web developers who build modern, interactive and visually engaging digital experiences — together.',
+        approach: 'We care about the whole journey: a considered design, clean and maintainable code, and an interface that feels effortless to use. Every project starts with understanding the people who will use it.',
+        pillars: [
+            { title: 'Design', text: 'Clear hierarchy, honest typography and purposeful motion.' },
+            { title: 'Development', text: 'Fast, accessible, well-structured code that lasts.' },
+            { title: 'Experience', text: 'Details that make a site feel good to use.' },
+        ],
+    },
+    /* ---------- Pages 3–4 · About ---------- */
+    about: {
+        kicker: 'Chapter 02 · About',
+        heading: 'Two developers, one craft.',
+        together: 'Together',
+        philosophy: 'Good design is quiet. It gets out of the way and lets the work speak.',
+        goals: 'To keep growing, build products people genuinely enjoy using, and take on ambitious, creative projects for clients who care about quality.',
+    },
+    /* ---------- Pages 5–6 · Skills ---------- */
+    skills: {
+        kicker: 'Chapter 03 · Technical Skills',
+        heading: 'The toolkit.',
+        note: 'The core stack we build with — from first sketch to deployment.',
+        categories: [
+            {
+                id: 'frontend',
+                title: 'Frontend Development',
+                icon: 'brackets',
+                items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'Responsive web design'],
+            },
+            {
+                id: 'motion',
+                title: 'Styling & Animation',
+                icon: 'curve',
+                items: ['Tailwind CSS', 'Modern CSS animations', 'GSAP', 'Framer Motion'],
+            },
+            {
+                id: 'backend',
+                title: 'Backend Development',
+                icon: 'stack',
+                items: ['Node.js', 'Express', 'REST APIs', 'Authentication', 'Database integration'],
+            },
+            {
+                id: 'tools',
+                title: 'Tools & Workflow',
+                icon: 'tools',
+                items: [
+                    'Git & GitHub',
+                    'VS Code',
+                    'Figma',
+                    'Browser developer tools',
+                    'Deployment & performance optimization',
+                ],
+            },
+        ],
+    },
+    /* ---------- Pages 15–16 · Process ---------- */
+    process: {
+        kicker: 'Chapter 04 · Development Process',
+        heading: 'How a site gets built.',
+        stages: [
+            { title: 'Discovery & planning', text: 'Goals, audience, scope and a clear plan before a line of code.' },
+            { title: 'Research & structure', text: 'Content, sitemap and user flows that make the site easy to navigate.' },
+            { title: 'UI / UX design', text: 'Layouts, type and components designed in Figma, then refined.' },
+            { title: 'Frontend development', text: 'Responsive, accessible interfaces built with clean components.' },
+            { title: 'Backend integration', text: 'APIs, authentication and data — wherever the project needs them.' },
+            { title: 'Testing & optimization', text: 'Cross-device testing, accessibility checks and performance tuning.' },
+            { title: 'Deployment & maintenance', text: 'Reliable launch, monitoring and ongoing improvements.' },
+        ],
+    },
+    /* ---------- Pages 17–18 · Services ---------- */
+    services: {
+        kicker: 'Chapter 05 · Services',
+        heading: 'What we build.',
+        left: [
+            {
+                heading: 'Websites',
+                items: [
+                    { when: '01', title: 'Business & portfolio websites', where: 'Fast, responsive sites that present a brand clearly.' },
+                    { when: '02', title: 'E-commerce stores', where: 'Product catalogues, carts and smooth checkout flows.' },
+                    { when: '03', title: 'Landing pages', where: 'Focused pages designed to turn visitors into customers.' },
+                ],
+            },
+            {
+                heading: 'Applications',
+                items: [
+                    { when: '04', title: 'Web apps & dashboards', where: 'Interactive interfaces built around real workflows.' },
+                    { when: '05', title: 'APIs & authentication', where: 'Node.js and Express back ends with secure sign-in.' },
+                ],
+            },
+        ],
+        right: [
+            {
+                heading: 'Experiences',
+                items: [
+                    { when: '06', title: 'Interactive & 3D websites', where: 'Scroll-driven motion and depth with CSS 3D and GSAP.' },
+                    { when: '07', title: 'Animation & micro-interactions', where: 'Purposeful motion that respects reduced-motion settings.' },
+                ],
+            },
+            {
+                heading: 'Working with us',
+                items: [
+                    { when: '08', title: 'Clear communication', where: 'A plan, regular updates and honest timelines.' },
+                    { when: '09', title: 'Performance, SEO & accessibility', where: 'Optimised, search-friendly builds that work for everyone.' },
+                    { when: '10', title: 'Launch & support', where: 'Deployment, handover and ongoing improvements.' },
+                ],
+            },
+        ],
+    },
+    /* ---------- Pages 19–20 · Contact ---------- */
+    contact: {
+        kicker: 'Final Chapter · Contact',
+        heading: 'Have a project in mind?',
+        text: 'Let’s turn your ideas into something extraordinary.',
+        cta: 'Start a conversation',
+        subject: 'Project enquiry',
+        /** Optional extra links. Any link left as '' is hidden automatically. */
+        links: {
+            github: { label: '', href: '' }, // e.g. { label: 'github.com/your-name', href: 'https://github.com/your-name' }
+            linkedin: { label: '', href: '' },
+            instagram: { label: '', href: '' },
+            whatsapp: { label: '', href: '' }, // e.g. { label: '+92 000 0000000', href: 'https://wa.me/920000000000' }
+        },
+    },
+};
+/** Frequently asked questions (shown in the website section below the book). */
+const faq = [
+    {
+        q: 'What do you build?',
+        a: 'Business and portfolio websites, e-commerce stores, landing pages, web apps and dashboards, and interactive 3D experiences.',
+    },
+    {
+        q: 'How does a project start?',
+        a: 'With a short conversation about your goals, audience and scope. Then we agree a plan, a design direction and a clear timeline before any development begins.',
+    },
+    {
+        q: 'Which technologies do you use?',
+        a: 'HTML, CSS, JavaScript and TypeScript with React and Next.js on the front end; Node.js and Express on the back end; Figma for design; Git and GitHub for workflow.',
+    },
+    {
+        q: 'Will my website work on phones and tablets?',
+        a: 'Yes. Every site is built responsive, tested across common screen sizes, and built with speed and accessibility in mind.',
+    },
+    {
+        q: 'How can I get in touch?',
+        a: 'Email either of us, or both at once with the “Start a conversation” button. Our addresses are in the contact section below.',
+    },
+];
+/** Table of contents of the book — `spread` is the two-page spread number (1–6) the entry opens. */
+const contents = [
+    { label: 'Cover', spread: 0 },
+    { label: 'Introduction', spread: 1 },
+    { label: 'About', spread: 2 },
+    { label: 'Skills', spread: 3 },
+    { label: 'Process', spread: 4 },
+    { label: 'Services', spread: 5 },
+    { label: 'Contact', spread: 6 },
+];
+
+/* ---- util.js ---- */
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const smooth = (t) => {
+    const x = clamp(t, 0, 1);
+    return x * x * (3 - 2 * x);
+};
+const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+const esc = (s) => s.replace(/[&<>"']/g, (c) => ESC[c]);
+function div(cls, parent) {
+    const d = document.createElement('div');
+    d.className = cls;
+    if (parent)
+        parent.appendChild(d);
+    return d;
+}
+const pad2 = (n) => String(n).padStart(2, '0');
+
+/* ---- engine.js ---- */
+
+/**
+ * BookEngine owns a single float, `pos`:
+ *   pos = number of leaves that have been turned.
+ *   0 = closed book, 1 = first spread, … max = last page.
+ * Leaf i has turned `clamp(pos - i, 0, 1)` of the way — so one number drives every page.
+ * It is animated with requestAnimationFrame (no libraries), and can be driven directly by a drag.
+ */
+class BookEngine {
+    pos = 0;
+    target = 0;
+    peek = 0;
+    max;
+    reduced = false;
+    dragging = false;
+    onFrame = () => { };
+    onTarget = () => { };
+    onSettle = () => { };
+    raf = 0;
+    from = 0;
+    to = 0;
+    t0 = 0;
+    dur = 0;
+    animating = false;
+    peekTarget = 0;
+    constructor(max) {
+        this.max = max;
+    }
+    get busy() {
+        return this.animating || this.dragging;
+    }
+    get effective() {
+        return clamp(this.pos + this.peek, 0, this.max);
+    }
+    setMax(max, pos) {
+        this.max = max;
+        this.stop();
+        this.pos = this.target = clamp(Math.round(pos), 0, max);
+        this.peek = this.peekTarget = 0;
+        this.onTarget(this.target);
+        this.onFrame(this.effective);
+    }
+    /** Turn to an absolute page position. Safe to call while already turning (it retargets smoothly). */
+    goTo(t) {
+        t = clamp(Math.round(t), 0, this.max);
+        if (t === this.target && !this.dragging && Math.abs(this.pos - t) < 1e-4)
+            return;
+        this.target = t;
+        this.onTarget(t);
+        this.dragging = false;
+        this.peekTarget = 0;
+        const dist = Math.abs(t - this.pos);
+        if (this.reduced || dist < 1e-4) {
+            this.pos = t;
+            this.peek = 0;
+            this.animating = false;
+            cancelAnimationFrame(this.raf);
+            this.onFrame(this.effective);
+            this.onSettle();
+            return;
+        }
+        this.from = this.pos;
+        this.to = t;
+        this.t0 = performance.now();
+        this.dur = (dist <= 1.001 ? 1050 * Math.pow(Math.max(dist, 0.3), 0.7) : Math.min(2300, 850 + 260 * dist));
+        this.animating = true;
+        this.kick();
+    }
+    next() {
+        this.goTo(Math.round(this.target) + 1);
+    }
+    prev() {
+        this.goTo(Math.round(this.target) - 1);
+    }
+    setPeek(v) {
+        if (this.reduced)
+            return;
+        this.peekTarget = v;
+        this.kick();
+    }
+    /* ---- manual dragging (touch / mouse) ---- */
+    beginDrag() {
+        this.stop();
+        this.dragging = true;
+        this.peekTarget = 0;
+        this.peek = 0;
+    }
+    dragTo(p) {
+        this.pos = clamp(p, 0, this.max);
+        this.onFrame(this.effective);
+    }
+    /** Finish a drag, snapping to `t` (a whole page). */
+    endDrag(t) {
+        this.dragging = false;
+        this.target = -1; // force goTo to run even if equal
+        this.goTo(t);
+    }
+    stop() {
+        this.animating = false;
+        cancelAnimationFrame(this.raf);
+    }
+    kick() {
+        cancelAnimationFrame(this.raf);
+        this.raf = requestAnimationFrame(this.tick);
+    }
+    tick = (now) => {
+        let active = false;
+        if (this.animating) {
+            const k = clamp((now - this.t0) / this.dur, 0, 1);
+            const e = this.dur > 1400 ? k : k; // linear time, eased below
+            this.pos = this.from + (this.to - this.from) * easeInOutCubic(e);
+            if (k >= 1) {
+                this.pos = this.to;
+                this.animating = false;
+                this.onFrame(this.effective);
+                this.onSettle();
+            }
+            else {
+                active = true;
+            }
+        }
+        // ease the hover "peek" toward its target
+        const d = this.peekTarget - this.peek;
+        if (Math.abs(d) > 0.0005) {
+            this.peek += d * 0.18;
+            active = true;
+        }
+        else if (this.peek !== this.peekTarget) {
+            this.peek = this.peekTarget;
+        }
+        this.onFrame(this.effective);
+        if (active)
+            this.raf = requestAnimationFrame(this.tick);
+    };
+}
+
+/* ---- pages.js ---- */
+
+
+const ARROW = `<svg class="ico-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const EXT = `<svg class="ico-ext" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const ICONS = {
+    brackets: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="d" d="M24 14 10 32l14 18M40 14l14 18-14 18M35 12 29 52"/></svg>`,
+    curve: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="d" d="M8 50C20 50 22 14 34 14s14 36 22 36"/><circle class="f" cx="34" cy="14" r="3.2"/><path class="d thin" d="M8 56h48"/></svg>`,
+    stack: `<svg viewBox="0 0 64 64" aria-hidden="true"><path class="d" d="m32 10 22 10-22 10-22-10z"/><path class="d" d="m10 30 22 10 22-10M10 40l22 10 22-10"/></svg>`,
+    tools: `<svg viewBox="0 0 64 64" aria-hidden="true"><circle class="d" cx="32" cy="32" r="9"/><path class="d" d="M32 8v8M32 48v8M8 32h8M48 32h8M15 15l6 6M43 43l6 6M49 15l-6 6M21 43l-6 6"/></svg>`,
+};
+/* ---------- shared bits ---------- */
+const head = (kicker, title, tag = 'h2') => `<header class="pg-head"><p class="kicker">${esc(kicker)}</p><${tag} class="title">${esc(title)}</${tag}></header>`;
+const chips = (arr) => `<ul class="chips">${arr.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>`;
+/* ================= COVER ================= */
+function coverHtml() {
+    return `<div class="cover-art">
+    <div class="cover-frame"></div>
+    <div class="cover-inner">
+      <p class="cover-top"><span>Portfolio</span><span>Vol. 01</span></p>
+      <h1 class="cover-name" aria-label="${esc(site.brand)}"><span>${esc(site.people[0].first.toUpperCase())}</span><i aria-hidden="true">&amp;</i><span>${esc(site.people[1].first.toUpperCase())}</span></h1>
+      <p class="cover-role">${esc(site.role.toUpperCase())}</p>
+      <p class="cover-by">${site.people.map((x) => esc(x.name)).join(' · ')}</p>
+      <span class="cover-rule"></span>
+      <p class="cover-tag">“${esc(site.tagline)}”</p>
+      <p class="cover-open"><span>${esc(site.openHint)}</span></p>
+    </div>
+    <div class="cover-hinge"></div>
+  </div>`;
+}
+/* ================= SPREAD 1 ================= */
+function p1() {
+    const fig = (x) => {
+        const inner = x.image
+            ? `<img src="${esc(x.image)}" alt="Portrait of ${esc(x.name)}" loading="lazy" decoding="async">`
+            : `<div class="mono" aria-hidden="true"><span>${esc(x.monogram)}</span></div>`;
+        return `<figure class="who"><div class="arch"><div class="arch-in">${inner}</div></div><figcaption><b>${esc(x.name)}</b><span>${esc(x.role)}</span></figcaption></figure>`;
+    };
+    return `<div class="pg pg-portrait">
+    <p class="kicker center">${esc(site.brand)} · Portfolio</p>
+    <div class="duo">${site.people.map(fig).join('')}</div>
+    <p class="cap"><span class="cap-rule"></span>${esc(site.portrait.caption)}</p>
+    <p class="orn" aria-hidden="true">✦</p>
+  </div>`;
+}
+function p2() {
+    const i = site.intro;
+    return `<div class="pg pg-intro">
+    <p class="kicker">${esc(i.kicker)}</p>
+    <h1 class="display">${esc(i.heading)}</h1>
+    <p class="lede">${esc(i.lede)}</p>
+    <p class="body opt">${esc(i.approach)}</p>
+    <ul class="pillars">${i.pillars
+        .map((p, n) => `<li><span class="num">0${n + 1}</span><b>${esc(p.title)}</b><span class="opt">${esc(p.text)}</span></li>`)
+        .join('')}</ul>
+    <p class="turn-hint"><span>Turn the page</span>${ARROW}</p>
+  </div>`;
+}
+/* ================= SPREAD 2 ================= */
+function person(i) {
+    const x = site.people[i];
+    return `<section class="person"><h3 class="pname">${esc(x.name)}</h3><p class="prole">${esc(x.role)}</p>
+    <p class="body">${esc(x.background)}</p>
+    <p class="body opt">${esc(x.approach)}</p>
+    ${chips(x.focus)}</section>`;
+}
+function p3() {
+    const a = site.about;
+    return `<div class="pg pg-about">${head(a.kicker, a.heading)}${person(0)}${chapNum('02')}</div>`;
+}
+function p4() {
+    const a = site.about;
+    return `<div class="pg pg-about">
+    ${person(1)}
+    <blockquote class="quote"><span class="qm" aria-hidden="true">“</span>${esc(a.philosophy)}<footer>Our design philosophy</footer></blockquote>
+    <section><h3 class="sub-h">${esc(a.together)}</h3><p class="body opt">${esc(a.goals)}</p></section>
+  </div>`;
+}
+/* ================= SPREAD 3 ================= */
+function skillBlock(id) {
+    const c = site.skills.categories.find((x) => x.id === id);
+    if (!c)
+        return '';
+    return `<section class="skill" data-skill="${esc(c.id)}">
+    <div class="skill-ico">${ICONS[c.icon] ?? ''}</div>
+    <div class="skill-main">
+      <h3 class="skill-t">${esc(c.title)}</h3>
+      <ol class="skill-list">${c.items.map((it, n) => `<li><span class="i">${pad2(n + 1)}</span><span>${esc(it)}</span></li>`).join('')}</ol>
+    </div>
+  </section>`;
+}
+const chapNum = (n) => `<p class="chap-num opt" aria-hidden="true">${n}</p>`;
+function p5() {
+    const s = site.skills;
+    return `<div class="pg pg-skills">${head(s.kicker, s.heading)}${skillBlock('frontend')}${skillBlock('motion')}</div>`;
+}
+function p6() {
+    return `<div class="pg pg-skills pg-skills-r">${skillBlock('backend')}${skillBlock('tools')}<p class="fine">${esc(site.skills.note)}</p></div>`;
+}
+/* ================= SPREAD 8 · process ================= */
+function stage(n) {
+    const s = site.process.stages[n];
+    return `<li class="step" style="--i:${n}"><span class="dot"><b>${n + 1}</b></span><div><h3 class="step-t">${esc(s.title)}</h3><p class="body opt">${esc(s.text)}</p></div></li>`;
+}
+function p15() {
+    const pr = site.process;
+    return `<div class="pg pg-process">${head(pr.kicker, pr.heading)}<ol class="stages">${[0, 1, 2, 3].map(stage).join('')}</ol></div>`;
+}
+function p16() {
+    return `<div class="pg pg-process pg-process-r"><ol class="stages cont" start="5">${[4, 5, 6].map(stage).join('')}</ol>
+    <svg class="loop" viewBox="0 0 200 60" aria-hidden="true"><path class="d" d="M10 30c0-14 24-14 45 0s45 14 45 0-24-14-45 0-45 14-45 0z" transform="translate(40 0)"/></svg>
+    <p class="fine">Every project loops back to the start: learn, refine, improve.</p></div>`;
+}
+/* ================= SPREAD 9 · experience ================= */
+function timeline(groups) {
+    return groups
+        .map((g) => `<section class="tl"><h3 class="sub-h">${esc(g.heading)}</h3>${g.items
+        .map((it) => `<div class="tl-item"><span class="tl-dot"></span><p class="tl-when">${esc(it.when)}</p><p class="tl-title">${esc(it.title)}</p><p class="tl-where">${esc(it.where)}</p></div>`)
+        .join('')}</section>`)
+        .join('');
+}
+function p17() {
+    const e = site.services;
+    return `<div class="pg pg-exp">${head(e.kicker, e.heading)}${timeline(e.left)}</div>`;
+}
+function p18() {
+    return `<div class="pg pg-exp pg-exp-r">${timeline(site.services.right)}</div>`;
+}
+/* ================= SPREAD 10 · contact ================= */
+function p19() {
+    const c = site.contact;
+    const to = site.people.map((x) => x.email).join(',');
+    const href = `mailto:${to}?subject=${encodeURIComponent(c.subject)}`;
+    return `<div class="pg pg-contact">
+    <p class="kicker">${esc(c.kicker)}</p>
+    <h2 class="display big">${esc(c.heading)}</h2>
+    <p class="lede">${esc(c.text)}</p>
+    <a class="cta" href="${esc(href)}">${esc(c.cta)} ${ARROW}</a>
+    <p class="fine">One message reaches both of us.</p>
+  </div>`;
+}
+function p20() {
+    const l = site.contact.links;
+    const people = site.people.map((x) => ({ k: x.name, v: { label: x.email, href: `mailto:${x.email}` } }));
+    const extra = [
+        { k: 'GitHub', v: l.github },
+        { k: 'LinkedIn', v: l.linkedin },
+        { k: 'Instagram', v: l.instagram },
+        { k: 'WhatsApp', v: l.whatsapp },
+    ];
+    const ext = (href) => (href.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener noreferrer"');
+    return `<div class="pg pg-contact pg-contact-r">
+    <ul class="contacts">${[...people, ...extra]
+        .filter((r) => r.v.href)
+        .map((r) => `<li><a href="${esc(r.v.href)}"${ext(r.v.href)}><span class="ck">${esc(r.k)}</span><span class="cv">${esc(r.v.label || r.v.href)}</span>${EXT}</a></li>`)
+        .join('')}</ul>
+    <button class="btn solid back" data-go="0">↺ Return to the cover</button>
+    <p class="fine">© ${esc(site.year)} Irzam Shakeel &amp; Adnan Ahmed · Designed &amp; built as a book.</p>
+  </div>`;
+}
+/** Pages 1–12 (index 0 is unused so page numbers match indices). */
+const PAGES = [
+    '',
+    p1(), p2(), p3(), p4(), p5(), p6(),
+    p15(), p16(), p17(), p18(), p19(), p20(),
+];
+const PAGE_COUNT = PAGES.length - 1; // 12
+const SPREAD_COUNT = PAGE_COUNT / 2; // 6
+const SECTIONS = contents;
+
+/* ---- book.js ---- */
+
+
+
+/** How many strips a turning page is cut into to make it bend. */
+const STRIPS = 12;
+const SEAM = 0.8; // px overlap between strips to hide hairline seams
+const BOARD = 3; // cover board thickness (px)
+function computeDims(vw, vh) {
+    if (vw >= 880 && vw / vh >= 1.12) {
+        const availW = vw * 0.92;
+        const availH = vh - 118;
+        const W = Math.floor(Math.min(availW / 2 - 6, availH * 0.74 * 0.97, 700));
+        return { mode: 'spread', W: Math.max(W, 300), H: Math.round(Math.max(W, 300) / 0.74) };
+    }
+    const availW = vw - 26;
+    const availH = vh - (vh < 520 ? 84 : 148); // short (landscape-phone) screens get slimmer chrome
+    const W = Math.floor(Math.max(Math.min(availW, availH * 0.6, 640), vh < 520 ? 150 : 240));
+    return { mode: 'single', W, H: Math.round(W / 0.6) };
+}
+/** Number of leaves for a mode. */
+const leafCount = (mode) => (mode === 'spread' ? PAGE_COUNT / 2 + 1 : PAGE_COUNT + 1);
+function makeFace(page, side) {
+    const f = div(`face ${side}`);
+    f.dataset.page = String(page);
+    div('face-body', f); // filled lazily by hydrate()
+    div('gutter', f);
+    const fo = div('folio', f);
+    fo.innerHTML = `<span>${site.brand}</span><span>${pad2(page)}</span>`;
+    return f;
+}
+/** Fill a face's content the first time it's needed (keeps first paint light). */
+function hydrate(f) {
+    if (!f || f.dataset.ready || !f.dataset.page)
+        return;
+    const body = f.querySelector('.face-body');
+    if (body)
+        body.innerHTML = PAGES[Number(f.dataset.page)];
+    f.dataset.ready = '1';
+}
+function blankFace(side) {
+    const f = div(`face blank ${side}`);
+    div('gutter', f);
+    return f;
+}
+class Leaf {
+    book;
+    i;
+    kind;
+    frontFace;
+    backFace;
+    root;
+    pf; // front plane
+    pb; // back plane
+    shadeF;
+    shadeB;
+    layer = null;
+    strips = [];
+    theta = -1;
+    flexing = false;
+    castR = null;
+    castL = null;
+    constructor(book, i, kind, frontFace, backFace) {
+        this.book = book;
+        this.i = i;
+        this.kind = kind;
+        this.frontFace = frontFace;
+        this.backFace = backFace;
+        const { W, H } = book;
+        const o = book.o;
+        this.root = div(kind === 'cover' ? 'leaf board' : 'leaf');
+        if (kind === 'cover') {
+            this.root.style.top = `${-o}px`;
+            this.root.style.width = `${W + o}px`;
+            this.root.style.height = `${H + 2 * o}px`;
+        }
+        else {
+            this.root.style.width = `${W}px`;
+            this.root.style.height = `${H}px`;
+        }
+        this.pf = div('plane pf', this.root);
+        this.pb = div('plane pb', this.root);
+        if (frontFace)
+            this.pf.appendChild(frontFace);
+        if (backFace) {
+            if (kind === 'cover') {
+                const wrap = div('face-wrap', this.pb);
+                wrap.style.cssText = `left:${o}px;top:${o}px;width:${W}px;height:${H}px`;
+                wrap.appendChild(backFace);
+            }
+            else
+                this.pb.appendChild(backFace);
+        }
+        this.shadeF = div('shade', this.pf);
+        this.shadeB = div('shade', this.pb);
+        if (kind === 'cover') {
+            const e = div('edge', this.root);
+            e.style.cssText = `top:100%;width:100%;height:${BOARD}px;transform:translateZ(${BOARD / 2}px) rotateX(-90deg)`;
+        }
+    }
+    /** z of this leaf lying on the right / left stack. */
+    zR() {
+        const { n, t } = this.book;
+        return this.i === 0 ? n * t + BOARD / 2 : (n - this.i) * t;
+    }
+    zL() {
+        const { t } = this.book;
+        return this.i === 0 ? -BOARD / 2 : this.i * t;
+    }
+    hydrate() {
+        hydrate(this.frontFace);
+        hydrate(this.backFace);
+    }
+    activate() {
+        if (this.flexing || this.kind === 'cover' || !this.frontFace || !this.backFace)
+            return;
+        const { W } = this.book;
+        const w = W / STRIPS;
+        const layer = div('strips', this.root);
+        layer.inert = true;
+        let parent = layer;
+        for (let j = 0; j < STRIPS; j++) {
+            const s = div('strip', parent);
+            s.style.width = `${w + SEAM}px`;
+            s.style.left = `${j === 0 ? 0 : w}px`;
+            const sf = div('sf', s);
+            const sb = div('sb', s);
+            const inF = div('inner', sf);
+            inF.style.transform = `translateX(${-j * w}px)`;
+            inF.appendChild(this.frontFace.cloneNode(true));
+            const shF = div('shade', sf);
+            shF.style.opacity = '1';
+            const inB = div('inner', sb);
+            inB.style.transform = `translateX(${-((STRIPS - 1 - j) * w - SEAM)}px)`;
+            inB.appendChild(this.backFace.cloneNode(true));
+            const shB = div('shade', sb);
+            shB.style.opacity = '1';
+            this.strips.push({ el: s, shF, shB });
+            parent = s;
+        }
+        this.layer = layer;
+        this.flexing = true;
+        this.root.classList.add('flexing');
+        this.theta = -1; // force re-apply
+    }
+    deactivate() {
+        if (!this.flexing)
+            return;
+        this.layer?.remove();
+        this.layer = null;
+        this.strips = [];
+        this.flexing = false;
+        this.root.classList.remove('flexing');
+        this.theta = -1;
+    }
+    apply(theta) {
+        if (Math.abs(theta - this.theta) < 1e-5)
+            return;
+        this.theta = theta;
+        const a = theta * 180;
+        const rad = theta * Math.PI;
+        const z = lerp(this.zR(), this.zL(), theta);
+        if (!this.flexing) {
+            this.root.style.transform = `translate3d(0,0,${z.toFixed(2)}px) rotateY(${(-a).toFixed(3)}deg)`;
+            const sh = (0.34 * Math.pow(Math.sin(rad), 2)).toFixed(3);
+            this.shadeF.style.opacity = sh;
+            this.shadeB.style.opacity = sh;
+            return;
+        }
+        // --- curl: pages lag at the free edge in the first half of the turn, lead in the second half ---
+        const C = this.book.mode === 'single' ? 30 : 40;
+        const bend = C * (0.8 * Math.sin(2 * rad) + 0.2 * Math.sin(rad));
+        const n = STRIPS - 1;
+        let wsum = 0;
+        const wts = [];
+        for (let j = 1; j <= n; j++) {
+            const w = 0.35 + (j / n) * 1.3;
+            wts.push(w);
+            wsum += w;
+        }
+        const root = a + 0.32 * bend;
+        this.root.style.transform = `translate3d(0,0,${z.toFixed(2)}px) rotateY(${(-root).toFixed(3)}deg)`;
+        let alpha = root;
+        const dark = [];
+        for (let j = 0; j < STRIPS; j++) {
+            const st = this.strips[j];
+            if (j > 0) {
+                const d = (bend * wts[j - 1]) / wsum;
+                st.el.style.transform = `rotateY(${d.toFixed(3)}deg)`;
+                alpha -= d;
+            }
+            // darker when edge-on, plus a soft sheen where the paper catches the light
+            const sn = Math.sin((alpha * Math.PI) / 180);
+            const sheen = Math.max(0, 1 - Math.abs(((alpha % 180) + 180) % 180 - 40) / 24) * 0.09;
+            dark.push(clamp(0.34 * sn * sn - sheen, 0, 0.5));
+        }
+        // blend shading across strip borders so the bend reads as a smooth curve, not bands
+        const tone = (a) => `rgba(10,7,4,${a.toFixed(3)})`;
+        for (let j = 0; j < STRIPS; j++) {
+            const l = j === 0 ? dark[0] : (dark[j - 1] + dark[j]) / 2;
+            const r = j === STRIPS - 1 ? dark[j] : (dark[j] + dark[j + 1]) / 2;
+            const st = this.strips[j];
+            st.shF.style.background = `linear-gradient(90deg,${tone(l)},${tone(r)})`;
+            st.shB.style.background = `linear-gradient(90deg,${tone(r)},${tone(l)})`;
+        }
+    }
+}
+class Book {
+    scene;
+    mode = 'spread';
+    W = 500;
+    H = 676;
+    o = 10;
+    n = 11;
+    t = 1.3;
+    camera;
+    el;
+    leaves = [];
+    stackR;
+    stackL;
+    shadow;
+    pos = 0;
+    target = 0;
+    constructor(scene) {
+        this.scene = scene;
+        this.camera = div('camera', scene);
+        this.el = div('book', this.camera);
+    }
+    /** (Re)build the whole book for the given size. */
+    build(dims) {
+        this.mode = dims.mode;
+        this.W = dims.W;
+        this.H = dims.H;
+        this.o = Math.max(7, Math.round(dims.W * 0.018));
+        this.n = leafCount(dims.mode);
+        this.t = dims.mode === 'spread' ? 1.3 : 1.15;
+        const { W, H, o, n, mode } = this;
+        this.scene.style.perspective = `${Math.round(Math.max(2000, W * 4.4))}px`;
+        this.scene.className = `scene mode-${mode}`;
+        this.el.replaceChildren();
+        this.leaves = [];
+        this.el.style.cssText = `top:${-H / 2}px;height:${H}px`;
+        this.el.style.setProperty('--W', `${W}px`);
+        this.el.style.setProperty('--H', `${H}px`);
+        // table shadow + base board (back cover)
+        this.shadow = div('table-shadow', this.el);
+        const base = div('base', this.el);
+        base.style.cssText = `left:0;top:${-o}px;width:${W + o}px;height:${H + 2 * o}px`;
+        const baseEdge = div('edge', this.el);
+        baseEdge.style.cssText = `left:0;top:${H + o}px;width:${W + o}px;height:${BOARD}px;transform:rotateX(-90deg)`;
+        // page stacks (paper edges)
+        this.stackR = div('edge paper', this.el);
+        this.stackL = div('edge paper', this.el);
+        this.stackR.style.cssText = `left:0;top:${H}px;width:${W}px`;
+        this.stackL.style.cssText = `left:${-W}px;top:${H}px;width:${W}px`;
+        // leaves
+        const spread = mode === 'spread';
+        for (let i = 0; i < n; i++) {
+            let front;
+            let back;
+            if (i === 0) {
+                front = div('cover');
+                front.innerHTML = coverHtml();
+                back = spread ? makeFace(1, 'L') : blankFace('L');
+            }
+            else if (spread) {
+                front = makeFace(2 * i, 'R');
+                back = i < n - 1 ? makeFace(2 * i + 1, 'L') : blankFace('L');
+            }
+            else {
+                front = makeFace(i, 'R');
+                back = blankFace('L');
+            }
+            const leaf = new Leaf(this, i, i === 0 ? 'cover' : 'page', front, back);
+            this.leaves.push(leaf);
+        }
+        // cast shadows (sit between stacks and turning leaves) — created before leaves so leaves paint above
+        for (const leaf of this.leaves) {
+            if (leaf.i < n - 1) {
+                const c = div('cast', this.el);
+                c.style.cssText = `left:0;top:0;width:${W}px;height:${H}px;transform:translateZ(${((n - leaf.i - 1) * this.t + 0.5).toFixed(2)}px)`;
+                leaf.castR = c;
+            }
+            if (spread && leaf.i >= 1) {
+                const c = div('cast', this.el);
+                c.style.cssText = `left:${-W}px;top:0;width:${W}px;height:${H}px;transform:translateZ(${((leaf.i - 1) * this.t + 0.5).toFixed(2)}px)`;
+                leaf.castL = c;
+            }
+        }
+        for (const leaf of this.leaves)
+            this.el.appendChild(leaf.root);
+        // page-edge click zones (above everything)
+        const zr = div('zone zone-r', this.el);
+        zr.dataset.zone = 'next';
+        zr.style.cssText = `left:${W * 0.915}px;top:${-o}px;width:${W * 0.085 + o}px;height:${H + 2 * o}px`;
+        zr.setAttribute('aria-hidden', 'true');
+        const zl = div('zone zone-l', this.el);
+        zl.dataset.zone = 'prev';
+        zl.setAttribute('aria-hidden', 'true');
+        zl.style.cssText = spread
+            ? `left:${-W - o}px;top:${-o}px;width:${W * 0.085 + o}px;height:${H + 2 * o}px`
+            : `left:0;top:${-o}px;width:${W * 0.085}px;height:${H + 2 * o}px`;
+        for (const z of [zr, zl])
+            z.style.transform = 'translateZ(60px)';
+        this.pos = -1;
+        this.render(this.pos < 0 ? 0 : this.pos);
+        this.setTarget(this.target);
+        this.hydrateIdle();
+    }
+    /** Fill the remaining pages while the browser is idle. */
+    hydrateIdle() {
+        const queue = [...this.leaves];
+        const idle = 'requestIdleCallback' in window ? (cb) => window.requestIdleCallback(cb, { timeout: 1500 }) : (cb) => setTimeout(cb, 120);
+        const step = () => {
+            const l = queue.shift();
+            if (!l)
+                return;
+            l.hydrate();
+            idle(step);
+        };
+        idle(step);
+    }
+    /** Mark which faces are on screen (others are inert so keyboard/screen readers skip them). */
+    setTarget(target) {
+        // hydrate everything that can be on screen or in flight between the old and new position
+        const lo = Math.max(0, Math.min(this.target, target) - 1);
+        const hi = Math.min(this.leaves.length - 1, Math.max(this.target, target) + 1);
+        for (let i = lo; i <= hi; i++)
+            this.leaves[i].hydrate();
+        this.target = target;
+        for (const leaf of this.leaves) {
+            const frontOn = leaf.i === target;
+            const backOn = this.mode === 'spread' && leaf.i === target - 1;
+            leaf.pf.inert = !frontOn;
+            leaf.pb.inert = !backOn;
+            leaf.pf.classList.toggle('is-current', frontOn);
+            leaf.pb.classList.toggle('is-current', backOn);
+            leaf.pf.setAttribute('aria-hidden', String(!frontOn));
+            leaf.pb.setAttribute('aria-hidden', String(!backOn));
+        }
+    }
+    /** Apply a (fractional) number of turned leaves to the whole scene. */
+    render(pos) {
+        this.pos = pos;
+        const { t, W, o, mode } = this;
+        let tr = 0;
+        let tl = 0;
+        for (const leaf of this.leaves) {
+            const th = clamp(pos - leaf.i, 0, 1);
+            const turning = th > 0.0008 && th < 0.9992;
+            if (turning && !leaf.flexing)
+                leaf.activate();
+            else if (!turning && leaf.flexing)
+                leaf.deactivate();
+            leaf.apply(th);
+            if (leaf.i >= 1) {
+                tr += (1 - th) * t;
+                tl += th * t;
+            }
+            this.cast(leaf, th, turning);
+        }
+        // paper edges
+        this.stackR.style.height = `${tr.toFixed(2)}px`;
+        this.stackR.style.transform = `translateZ(${tr.toFixed(2)}px) rotateX(-90deg)`;
+        this.stackL.style.height = `${tl.toFixed(2)}px`;
+        this.stackL.style.transform = `translateZ(${tl.toFixed(2)}px) rotateX(-90deg)`;
+        this.stackL.style.display = mode === 'spread' ? '' : 'none';
+        // camera: lies flat when closed, tips up to face the reader when open
+        const open = smooth(Math.min(pos, 1));
+        const spread = mode === 'spread';
+        const tilt = spread ? lerp(54, 12, open) : lerp(36, 4, open);
+        const sc = spread ? lerp(1.06, 1, open) : lerp(0.86, 1, open);
+        // the scale is applied about the spine, so the centring offset must be scaled with it
+        const centre = spread ? ((W + o) / 2) * (1 - open) : lerp((W + o) / 2, W / 2, open);
+        const shift = -centre * sc;
+        const lift = spread ? lerp(-6, -14, open) : -22;
+        this.camera.style.transform = `translate3d(${shift.toFixed(1)}px,${lift}px,0) scale(${sc.toFixed(3)}) rotateX(${tilt.toFixed(2)}deg)`;
+        // soft shadow beneath the whole book
+        const lw = spread ? W * open : 0;
+        this.shadow.style.cssText = `left:${(-lw - 16).toFixed(1)}px;top:${-o - 14}px;width:${(lw + W + o + 34).toFixed(1)}px;height:${this.H + 2 * o + 30}px;transform:translateZ(-${BOARD + 0.6}px)`;
+    }
+    cast(leaf, th, turning) {
+        const rad = th * Math.PI;
+        const c = Math.cos(rad);
+        const s = Math.sin(rad);
+        const A = 0.5 * Math.pow(s, 0.8);
+        const dark = (alpha, e, dir) => {
+            const p1 = clamp(e - 0.06, 0, 1) * 100;
+            const p2 = clamp(e + 0.32, 0, 1) * 100;
+            return `linear-gradient(${dir},rgba(8,5,2,${alpha.toFixed(3)}) 0%,rgba(8,5,2,${(alpha * 0.85).toFixed(3)}) ${p1.toFixed(1)}%,rgba(8,5,2,0) ${p2.toFixed(1)}%)`;
+        };
+        if (leaf.castR) {
+            if (turning && c >= 0) {
+                leaf.castR.style.opacity = '1';
+                leaf.castR.style.background = dark(A, c, '90deg');
+            }
+            else
+                leaf.castR.style.opacity = '0';
+        }
+        if (leaf.castL) {
+            if (turning && c < 0) {
+                leaf.castL.style.opacity = '1';
+                leaf.castL.style.background = dark(A, -c, '270deg');
+            }
+            else
+                leaf.castL.style.opacity = '0';
+        }
+    }
+}
+
+/* ---- sections.js ---- */
+
+
+
+/**
+ * The scrolling website below the book. Everything is generated from
+ * src/content/site.ts, so editing that file updates the book and the site together.
+ */
+const S_ARROW = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const S_EXT = `<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+const mailAll = () => `mailto:${site.people.map((p) => p.email).join(',')}?subject=${encodeURIComponent(site.contact.subject)}`;
+const sEyebrow = (t) => `<p class="eyebrow rv">${esc(t)}</p>`;
+function sAbout() {
+    const cards = site.people
+        .map((p, i) => {
+        const av = p.image
+            ? `<img src="${esc(p.image)}" alt="Portrait of ${esc(p.name)}" loading="lazy" decoding="async" width="160" height="200">`
+            : `<span class="av-mono" aria-hidden="true">${esc(p.monogram)}</span>`;
+        return `<article class="person-card rv" style="--d:${i * 90}ms">
+        <div class="av">${av}</div>
+        <div class="pc-body">
+          <h3 class="pc-name">${esc(p.name)}</h3>
+          <p class="pc-role">${esc(p.role)}</p>
+          <p>${esc(p.background)}</p>
+          <p>${esc(p.approach)}</p>
+          <ul class="tags">${p.focus.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>
+          <a class="link-line" href="mailto:${esc(p.email)}">Email ${esc(p.first)} ${S_ARROW}</a>
+        </div>
+      </article>`;
+    })
+        .join('');
+    return `<section class="sec" id="about" aria-labelledby="h-about"><div class="wrap">
+    ${sEyebrow('About')}
+    <h2 id="h-about" class="h2 rv">${esc(site.about.heading)}</h2>
+    <p class="lead rv">${esc(site.intro.lede)} ${esc(site.intro.approach)}</p>
+    <div class="people">${cards}</div>
+    <blockquote class="pull rv"><p>“${esc(site.about.philosophy)}”</p><footer>${esc(site.about.together)} · ${esc(site.people.map((p) => p.first).join(' & '))}</footer></blockquote>
+    <ul class="pillars-row">${site.intro.pillars
+        .map((p, i) => `<li class="rv" style="--d:${i * 80}ms"><span class="num">${pad2(i + 1)}</span><b>${esc(p.title)}</b><span>${esc(p.text)}</span></li>`)
+        .join('')}</ul>
+  </div></section>`;
+}
+function sSkills() {
+    const s = site.skills;
+    return `<section class="sec alt" id="skills" aria-labelledby="h-skills"><div class="wrap">
+    ${sEyebrow('Technical skills')}
+    <h2 id="h-skills" class="h2 rv">${esc(s.heading)}</h2>
+    <p class="lead rv">${esc(s.note)}</p>
+    <div class="grid skills">${s.categories
+        .map((c, i) => `<article class="card rv" style="--d:${i * 70}ms">
+          <div class="card-ico">${ICONS[c.icon] ?? ''}</div>
+          <h3>${esc(c.title)}</h3>
+          <ul class="tags">${c.items.map((it) => `<li>${esc(it)}</li>`).join('')}</ul>
+        </article>`)
+        .join('')}</div>
+  </div></section>`;
+}
+function sServices() {
+    const sv = site.services;
+    const groups = [...sv.left, ...sv.right];
+    return `<section class="sec" id="services" aria-labelledby="h-services"><div class="wrap">
+    ${sEyebrow('Services')}
+    <h2 id="h-services" class="h2 rv">${esc(sv.heading)}</h2>
+    <div class="grid services">${groups
+        .map((g, i) => `<article class="card rv" style="--d:${i * 70}ms">
+          <h3 class="card-h">${esc(g.heading)}</h3>
+          <ol class="svc">${g.items
+        .map((it) => `<li><span class="n">${esc(it.when)}</span><div><b>${esc(it.title)}</b><span>${esc(it.where)}</span></div></li>`)
+        .join('')}</ol>
+        </article>`)
+        .join('')}</div>
+  </div></section>`;
+}
+function sProcess() {
+    const p = site.process;
+    return `<section class="sec alt" id="process" aria-labelledby="h-process"><div class="wrap narrow">
+    ${sEyebrow('Process')}
+    <h2 id="h-process" class="h2 rv">${esc(p.heading)}</h2>
+    <ol class="steps">${p.stages
+        .map((st, i) => `<li class="rv"><span class="step-n">${i + 1}</span><div><h3>${esc(st.title)}</h3><p>${esc(st.text)}</p></div></li>`)
+        .join('')}</ol>
+  </div></section>`;
+}
+function sFaq() {
+    return `<section class="sec" id="faq" aria-labelledby="h-faq"><div class="wrap narrow">
+    ${sEyebrow('Questions')}
+    <h2 id="h-faq" class="h2 rv">Good to know.</h2>
+    <div class="faq rv">${faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>
+  </div></section>`;
+}
+function sContact() {
+    const c = site.contact;
+    const extra = [
+        ['GitHub', c.links.github],
+        ['LinkedIn', c.links.linkedin],
+        ['Instagram', c.links.instagram],
+        ['WhatsApp', c.links.whatsapp],
+    ];
+    const socials = extra.filter(([, v]) => v.href);
+    return `<section class="sec contact" id="contact" aria-labelledby="h-contact"><div class="wrap narrow center">
+    ${sEyebrow(c.kicker)}
+    <h2 id="h-contact" class="h2 big rv">${esc(c.heading)}</h2>
+    <p class="lead rv">${esc(c.text)}</p>
+    <div class="mails rv">${site.people
+        .map((p) => `<a class="mail-card" href="mailto:${esc(p.email)}"><span class="mc-n">${esc(p.name)}</span><span class="mc-e">${esc(p.email)}</span>${S_EXT}</a>`)
+        .join('')}</div>
+    <p class="rv"><a class="btn-solid" href="${esc(mailAll())}">${esc(c.cta)} ${S_ARROW}</a></p>
+    ${socials.length
+        ? `<ul class="socials rv">${socials
+            .map(([k, v]) => `<li><a href="${esc(v.href)}" target="_blank" rel="noopener noreferrer">${k}${v.label ? ` · ${esc(v.label)}` : ''}</a></li>`)
+            .join('')}</ul>`
+        : ''}
+  </div></section>`;
+}
+function sFooter() {
+    return `<footer class="foot"><div class="wrap foot-in">
+    <p>© ${esc(site.year)} ${esc(site.people.map((p) => p.name).join(' & '))}</p>
+    <a href="#top" data-top>Back to the book ↑</a>
+  </div></footer>`;
+}
+function sectionsHtml() {
+    return `<main class="site" id="site">${sAbout()}${sSkills()}${sServices()}${sProcess()}${sFaq()}${sContact()}</main>${sFooter()}`;
+}
+
+/* ---- main.js ---- */
+
+
+
+
+
+
+
+const app = document.getElementById('app');
+/* ---------- graceful fallback when CSS 3D is unavailable ---------- */
+const has3d = typeof CSS !== 'undefined' &&
+    CSS.supports('transform-style', 'preserve-3d') &&
+    CSS.supports('backface-visibility', 'hidden');
+if (!has3d) {
+    app.innerHTML = `<main class="flat-fallback"><h1>${esc(site.brand)} — ${esc(site.role)}</h1><p class="fine">Your browser can’t show the 3D book, so here is the portfolio as a simple page.</p>${PAGES.slice(1)
+        .map((p) => `<section class="face flat-card"><div class="face-body">${p}</div></section>`)
+        .join('')}</main>`;
+}
+else {
+    start();
+}
+function start() {
+    /* ---------- scaffold ---------- */
+    const NAV = [
+        ['About', '#about'],
+        ['Skills', '#skills'],
+        ['Services', '#services'],
+        ['Process', '#process'],
+        ['Contact', '#contact'],
+    ];
+    app.innerHTML = `
+    <header class="ui top" id="top">
+      <a class="brand" href="#" data-go="0" aria-label="${esc(site.brand)} — back to the cover">${esc(site.brand)}</a>
+      <div class="top-right">
+        <nav class="top-nav" aria-label="Website sections">${NAV.map(([l, h]) => `<a href="${h}">${l}</a>`).join('')}</nav>
+        <button class="ui-btn toc-btn" id="tocBtn" aria-haspopup="dialog" aria-expanded="false" aria-controls="toc">
+          <span>Contents</span><i aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+    <div class="stage" id="stage">
+      <div class="table" aria-hidden="true"></div>
+      <div class="scene" id="scene" role="region" aria-roledescription="book" aria-label="${esc(site.brand)} portfolio book"></div>
+      <p class="ui hint" id="hint" aria-hidden="true"></p>
+      <a class="ui more-cue" href="#about">Explore the site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <nav class="ui bar" aria-label="Page navigation">
+        <button class="ui-btn round" id="prev" aria-label="Previous page"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="counter" id="counter"><b id="cNum">Cover</b><span id="cSec"></span></p>
+        <button class="ui-btn round" id="next" aria-label="Next page"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </nav>
+      <aside class="toc ui" id="toc" role="dialog" aria-modal="true" aria-label="Table of contents" hidden>
+        <div class="toc-card">
+          <p class="kicker">The book</p>
+          <ol id="tocList"></ol>
+          <button class="ui-btn wide" data-go="0">↺ Back to the cover</button>
+          <div class="toc-links">
+            <p class="kicker">The website</p>
+            ${NAV.map(([l, h]) => `<a href="${h}" data-close>${l}</a>`).join('')}
+          </div>
+        </div>
+      </aside>
+      <p class="sr-only" id="live" aria-live="polite"></p>
+    </div>
+    ${sectionsHtml()}`;
+    const $ = (id) => document.getElementById(id);
+    const stage = $('stage');
+    const scene = $('scene');
+    const prevBtn = $('prev');
+    const nextBtn = $('next');
+    const tocBtn = $('tocBtn');
+    const toc = $('toc');
+    const hint = $('hint');
+    /* ---------- state ---------- */
+    let dims = computeDims(innerWidth, innerHeight);
+    const book = new Book(scene);
+    const engine = new BookEngine(leafCount(dims.mode) - 1);
+    const mq = matchMedia('(prefers-reduced-motion: reduce)');
+    engine.reduced = mq.matches;
+    mq.addEventListener?.('change', () => (engine.reduced = mq.matches));
+    const spreadToPos = (s) => dims.mode === 'spread' ? s : s === 0 ? 0 : 2 * s - 1;
+    const posToSpread = (p) => (dims.mode === 'spread' ? p : Math.ceil(p / 2));
+    engine.onFrame = (p) => book.render(p);
+    engine.onTarget = (t) => {
+        book.setTarget(t);
+        updateUI(t);
+    };
+    /* ---------- UI ---------- */
+    const cNum = $('cNum');
+    const cSec = $('cSec');
+    const live = $('live');
+    let announced = -1;
+    function updateUI(t) {
+        const s = posToSpread(t);
+        const sec = [...SECTIONS].reverse().find((x) => x.spread <= s)?.label ?? '';
+        if (t === 0) {
+            cNum.textContent = 'Cover';
+            cSec.textContent = 'Open the book';
+        }
+        else if (dims.mode === 'spread') {
+            cNum.textContent = `${pad2(s)} / ${pad2(SPREAD_COUNT)}`;
+            cSec.textContent = sec;
+        }
+        else {
+            cNum.textContent = `Page ${pad2(t)} / ${PAGE_COUNT}`;
+            cSec.textContent = sec;
+        }
+        prevBtn.disabled = t <= 0;
+        nextBtn.disabled = t >= engine.max;
+        prevBtn.setAttribute('aria-label', dims.mode === 'spread' ? 'Previous spread' : 'Previous page');
+        nextBtn.setAttribute('aria-label', t === 0 ? 'Open the book' : dims.mode === 'spread' ? 'Next spread' : 'Next page');
+        document.querySelectorAll('#tocList [data-go]').forEach((b) => {
+            const on = Number(b.dataset.go) === s || (Number(b.dataset.go) === 0 && s === 0);
+            b.classList.toggle('on', on);
+            if (on)
+                b.setAttribute('aria-current', 'true');
+            else
+                b.removeAttribute('aria-current');
+        });
+        if (announced !== t) {
+            announced = t;
+            live.textContent = t === 0 ? 'Cover. Book closed.' : `${cNum.textContent}. ${sec}.`;
+        }
+    }
+    $('tocList').innerHTML = SECTIONS.map((s) => `<li><button class="toc-item" data-go="${s.spread}"><span class="n">${pad2(s.spread)}</span><span>${esc(s.label)}</span></button></li>`).join('');
+    hint.textContent = matchMedia('(pointer: coarse)').matches
+        ? 'Swipe sideways to turn the page'
+        : 'Scroll · click a page edge · use ← →';
+    let hinted = false;
+    const fadeHint = () => {
+        if (hinted)
+            return;
+        hinted = true;
+        hint.classList.add('gone');
+    };
+    const hintTimer = window.setTimeout(fadeHint, 14000);
+    function openToc(open) {
+        toc.hidden = !open;
+        tocBtn.setAttribute('aria-expanded', String(open));
+        if (open)
+            toc.querySelector('button')?.focus();
+        else
+            tocBtn.focus({ preventScroll: true });
+    }
+    /* ---------- navigation helpers ---------- */
+    const go = (pos) => {
+        fadeHint();
+        window.clearTimeout(hintTimer);
+        engine.goTo(pos);
+    };
+    /* ---------- clicks (delegated, so duplicated strip content stays live too) ---------- */
+    let suppressClick = false;
+    stage.addEventListener('click', (e) => {
+        if (suppressClick) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    }, true);
+    const toTop = () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    app.addEventListener('click', (e) => {
+        const t = e.target;
+        if (t.closest('a[data-top]')) {
+            e.preventDefault();
+            toTop();
+            return;
+        }
+        if (t.closest('a[data-close]')) {
+            openToc(false);
+            return;
+        }
+        const goEl = t.closest('[data-go]');
+        if (goEl) {
+            e.preventDefault();
+            if (!toc.hidden)
+                openToc(false);
+            if (scrollY > 8)
+                toTop();
+            go(spreadToPos(Number(goEl.dataset.go)));
+            return;
+        }
+        const zone = t.closest('[data-zone]');
+        if (zone) {
+            go(engine.target + (zone.dataset.zone === 'next' ? 1 : -1));
+            return;
+        }
+        if (t.closest('.cover-art') && engine.target === 0)
+            go(1);
+    });
+    prevBtn.addEventListener('click', () => go(engine.target - 1));
+    nextBtn.addEventListener('click', () => go(engine.target + 1));
+    tocBtn.addEventListener('click', () => openToc(toc.hidden === true));
+    toc.addEventListener('click', (e) => {
+        if (e.target === toc)
+            openToc(false);
+    });
+    /* ---------- hover "peek": the page lifts a little at the edge ---------- */
+    scene.addEventListener('pointerover', (e) => {
+        if (e.pointerType !== 'mouse' || engine.busy)
+            return;
+        const t = e.target;
+        const zone = t.closest('[data-zone]');
+        if (zone) {
+            const fwd = zone.dataset.zone === 'next';
+            if (fwd && engine.target < engine.max)
+                engine.setPeek(0.05);
+            else if (!fwd && engine.target > 0)
+                engine.setPeek(-0.05);
+        }
+        else if (t.closest('.cover-art') && engine.target === 0)
+            engine.setPeek(0.035);
+    });
+    scene.addEventListener('pointerout', () => engine.setPeek(0));
+    /* ---------- wheel / trackpad: one gesture = one page ---------- */
+    let acc = 0;
+    let released = false;
+    let lastPageScroll = 0;
+    addEventListener('scroll', () => { if (scrollY > 0)
+        lastPageScroll = performance.now(); }, { passive: true });
+    let consumed = false;
+    let lastT = 0;
+    let lastAbs = 0;
+    stage.addEventListener('wheel', (e) => {
+        if (!toc.hidden)
+            return;
+        // once the page itself is scrolled (or was a moment ago) the browser owns the wheel
+        if (scrollY > 6 || performance.now() - lastPageScroll < 450)
+            return;
+        const now = performance.now();
+        const d = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+        const a = Math.abs(d);
+        const gap = now - lastT;
+        lastT = now;
+        if (gap > 140) {
+            acc = 0;
+            consumed = false;
+        }
+        else if (consumed && a > lastAbs * 1.8 && a > 30 && !engine.busy) {
+            consumed = false; // a fresh push during a trackpad's inertia tail
+            acc = 0;
+        }
+        lastAbs = a;
+        if (released && gap <= 140)
+            return;
+        released = false;
+        // a fresh scroll gesture on the last page continues down into the website
+        if (d > 0 && engine.target >= engine.max && gap > 140 && !engine.busy) {
+            released = true;
+            return;
+        }
+        e.preventDefault();
+        if (consumed)
+            return;
+        acc += d;
+        if (Math.abs(acc) > 40) {
+            consumed = true;
+            if (!engine.busy)
+                go(engine.target + (acc > 0 ? 1 : -1));
+            acc = 0;
+        }
+    }, { passive: false });
+    /* ---------- keyboard ---------- */
+    addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !toc.hidden) {
+            openToc(false);
+            return;
+        }
+        if (!toc.hidden || e.altKey || e.ctrlKey || e.metaKey)
+            return;
+        if (scrollY > 40)
+            return; // reading the website below — keys scroll the page as usual
+        const down = e.key === 'ArrowDown' || e.key === 'PageDown' || (e.key === ' ' && !e.shiftKey);
+        if (down && engine.target >= engine.max)
+            return; // last page: keys continue into the website
+        const tag = e.target.tagName;
+        const onControl = tag === 'BUTTON' || tag === 'A';
+        switch (e.key) {
+            case 'ArrowRight':
+            case 'ArrowDown':
+            case 'PageDown':
+                e.preventDefault();
+                go(engine.target + 1);
+                break;
+            case 'ArrowLeft':
+            case 'ArrowUp':
+            case 'PageUp':
+                e.preventDefault();
+                go(engine.target - 1);
+                break;
+            case ' ':
+                if (!onControl) {
+                    e.preventDefault();
+                    go(engine.target + (e.shiftKey ? -1 : 1));
+                }
+                break;
+            case 'Home':
+                e.preventDefault();
+                go(0);
+                break;
+            case 'End':
+                e.preventDefault();
+                go(engine.max);
+                break;
+        }
+    });
+    let drag = null;
+    const range = () => dims.W * (dims.mode === 'spread' ? 1.15 : 0.85);
+    stage.addEventListener('pointerdown', (e) => {
+        if (!toc.hidden || e.target.closest('.ui'))
+            return;
+        if (e.pointerType === 'mouse' && e.button !== 0)
+            return;
+        drag = { x0: e.clientX, y0: e.clientY, id: e.pointerId, active: false, dir: 1, base: 0, vx: 0, lx: e.clientX, lt: performance.now(), prog: 0 };
+    });
+    addEventListener('pointermove', (e) => {
+        if (!drag || e.pointerId !== drag.id)
+            return;
+        const dx = e.clientX - drag.x0;
+        const dy = e.clientY - drag.y0;
+        if (!drag.active) {
+            if (Math.hypot(dx, dy) < 10)
+                return;
+            const dir = dx < 0 ? 1 : -1;
+            const base = Math.round(engine.pos);
+            if (Math.abs(dx) < Math.abs(dy) * 1.1 || (dir > 0 && base >= engine.max) || (dir < 0 && base <= 0) || engine.busy) {
+                drag = null;
+                return;
+            }
+            drag.active = true;
+            drag.dir = dir;
+            drag.base = base;
+            engine.beginDrag();
+            fadeHint();
+            scene.classList.add('dragging');
+        }
+        const now = performance.now();
+        const dt = Math.max(1, now - drag.lt);
+        drag.vx = (e.clientX - drag.lx) / dt;
+        drag.lx = e.clientX;
+        drag.lt = now;
+        drag.prog = clamp((drag.dir > 0 ? -dx : dx) / range(), 0, 1);
+        engine.dragTo(drag.base + drag.dir * drag.prog);
+    });
+    const endDrag = (e, cancelled) => {
+        if (!drag || e.pointerId !== drag.id)
+            return;
+        const d = drag;
+        drag = null;
+        if (!d.active)
+            return;
+        scene.classList.remove('dragging');
+        suppressClick = true;
+        setTimeout(() => (suppressClick = false), 0);
+        const flick = d.dir > 0 ? -d.vx : d.vx; // px/ms in the turning direction
+        const commit = !cancelled && (d.prog > 0.32 || flick > 0.45) && flick > -0.3;
+        engine.endDrag(commit ? d.base + d.dir : d.base);
+    };
+    addEventListener('pointerup', (e) => endDrag(e, false));
+    addEventListener('pointercancel', (e) => endDrag(e, true));
+    /* ---------- sizing ---------- */
+    function rebuild(keep) {
+        const prevMode = book.mode;
+        const t = keep ? engine.target : 0;
+        const next = computeDims(innerWidth, innerHeight);
+        const modeChanged = next.mode !== prevMode && keep;
+        dims = next;
+        let tpos = t;
+        if (modeChanged) {
+            tpos = next.mode === 'single' ? (t === 0 ? 0 : 2 * t - 1) : Math.ceil(t / 2);
+        }
+        book.build(dims);
+        engine.setMax(leafCount(dims.mode) - 1, tpos);
+        stage.dataset.mode = dims.mode;
+    }
+    let rt = 0;
+    let lastW = innerWidth;
+    let lastH = innerHeight;
+    addEventListener('resize', () => {
+        // ignore tiny mobile-browser-chrome height jitters
+        if (Math.abs(innerWidth - lastW) < 2 && Math.abs(innerHeight - lastH) < 60)
+            return;
+        lastW = innerWidth;
+        lastH = innerHeight;
+        clearTimeout(rt);
+        rt = window.setTimeout(() => rebuild(true), 140);
+    });
+    rebuild(false);
+    /* ---------- website chrome: header background, reveal-on-scroll, pause the book off-screen ---------- */
+    const topBar = document.getElementById('top');
+    let ticking = false;
+    const onScroll = () => {
+        if (ticking)
+            return;
+        ticking = true;
+        requestAnimationFrame(() => {
+            topBar.classList.toggle('scrolled', scrollY > 40);
+            ticking = false;
+        });
+    };
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    const reveal = new IntersectionObserver((entries) => {
+        for (const en of entries) {
+            if (en.isIntersecting) {
+                en.target.classList.add('in');
+                reveal.unobserve(en.target);
+            }
+        }
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.rv').forEach((el) => reveal.observe(el));
+    new IntersectionObserver(([en]) => {
+        scene.style.visibility = en.isIntersecting ? '' : 'hidden';
+    }).observe(stage);
+    // test / debugging hook (also handy in the console)
+    window.__book = { engine, book, go: (s) => go(spreadToPos(s)) };
+}
+
+})();
+</script>
+  </body>
+</html>
